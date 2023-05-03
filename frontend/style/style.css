@@ -103,7 +103,7 @@ nav {
     display: none;
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 790px) {
     .menu {
       display: none;
       flex-direction: column;
@@ -130,7 +130,7 @@ nav {
     background-position: center top;
     padding-top: 40px;
     padding-bottom: 67px;
-    height: 940px;
+    /* height: 700px; */
   }
   .banner-wrapper{
     box-sizing: border-box;
@@ -138,13 +138,10 @@ nav {
     max-width: 90%;
     padding: 0 20px;
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
   .banner-row{
     display: flex;
-    /* flex-wrap: wrap; */
-    /* margin-left: -15px;
-    margin-right: -15px; */
   }
   .banner-col-1{
     flex: 0 0 50%;
@@ -175,7 +172,7 @@ nav {
     max-width: 560px;
     width: 100%;
 }
-.banner-container .text-wrapper h1, .banner-container .text-wrapper h2, .banner-container .text-wrapper h3, .banner-container .text-wrapper h4 {
+.banner-container .text-wrapper .h1, .banner-container .text-wrapper h2, .banner-container .text-wrapper h3, .banner-container .text-wrapper h4 {
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
 }
@@ -199,16 +196,52 @@ nav {
     text-transform: none;
     width: 100%;
 }
-
-
-@media (min-width: 768px){
-    .h1, h1 {
+    .h1 {
         color: #322e59;
         font-family: Poppins,serif;
         font-size: 64px;
         font-style: normal;
         font-weight: 600;
         line-height: 76.8px;
+        margin-bottom: 20px;
+        text-decoration: none;
+        text-transform: none;
+    }
+
+@media (min-width: 790px){
+    .h1 {
+        color: #322e59;
+        font-family: Poppins,serif;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 76.8px;
+        margin-bottom: 20px;
+        text-decoration: none;
+        text-transform: none;
+    }
+}
+@media (max-width: 500px){
+    .h1 {
+        color: #322e59;
+        font-family: Poppins,serif;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 76.8px;
+        margin-bottom: 20px;
+        text-decoration: none;
+        text-transform: none;
+    }
+}
+@media (max-width: 410px){
+    .h1 {
+        color: #322e59;
+        font-family: Poppins,serif;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 36.8px;
         margin-bottom: 20px;
         text-decoration: none;
         text-transform: none;
@@ -264,8 +297,8 @@ nav {
 }
 .features1 img{
     margin-left: auto;
-    margin-right: auto;
-    height: 20px;
+    margin-right: auto;margin-bottom: 9px;
+    height: 17px;
     width: 30px;
 }
 .featuresBox{
@@ -286,7 +319,7 @@ nav {
 }
 .features2 img{
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;margin-bottom: 9px;
     height: 25px;
     width: 25px;
 }
@@ -303,7 +336,7 @@ nav {
 }
 .features3 img{
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;margin-bottom: 9px;
     height: 25px;
     width: 25px;
 }
@@ -321,8 +354,8 @@ nav {
 .features4 img{
     margin-left: auto;
     margin-right: auto;
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 25px;margin-bottom: 9px;
 }
 .features5{
     margin: auto;
@@ -334,10 +367,59 @@ nav {
     display: flex;
     justify-content: center;
     text-align: center;
+    padding: 5px;
 }
 .features5 img{
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 9px;
     height: 25px;
     width: 25px;
+}
+.services{
+  display: flex;
+  justify-content: center;
+}
+.services-wrapper{
+  /* border: 2px solid red; */
+  margin-top: 30px;
+  width: 90%;
+  height: 300px;
+}
+@media screen and (max-width: 790px) {
+  .banner-row{
+    display: block;
+  }
+    .banner-col-1{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.services{
+  text-align: center;
+  color : #132B3E;
+}
+.services-list{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.services-list div{
+  width: 14%;
+  /* background-color: #1AB38D; */
+  height: 100px;
+  border: 2px solid ;
+  border-image: linear-gradient(to right, #f00, #00f) 1; 
+  /* border-radius: 25%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+}
+.services-list div:hover{
+  color: white;
+  transition: 0.3s;
+  background-color: rgb(78,72,156);
+  border: 4px solid;
+  border-image: linear-gradient(to bottom, #f00, #00f) 1;
 }
