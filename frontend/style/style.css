@@ -172,7 +172,7 @@ nav {
     max-width: 560px;
     width: 100%;
 }
-.banner-container .text-wrapper .h1, .banner-container .text-wrapper h2, .banner-container .text-wrapper h3, .banner-container .text-wrapper h4 {
+.banner-container .text-wrapper .h1, .banner-container .text-wrapper .h2, .banner-container .text-wrapper h3, .banner-container .text-wrapper h4 {
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
 }
@@ -305,6 +305,9 @@ nav {
     margin:auto;
     width: 120px;
 }
+.features:hover, .features1:hover, .features2:hover, .features3:hover, .features4:hover, .features5:hover {
+  background-color: #2D365C;
+}
 
 .features2{
     margin: auto;
@@ -386,6 +389,9 @@ nav {
   width: 90%;
   height: 300px;
 }
+.services-wrapper h1{
+  margin-bottom: 50px;
+}
 @media screen and (max-width: 790px) {
   .banner-row{
     display: block;
@@ -402,7 +408,7 @@ nav {
 .services-list{
   display: flex;
   justify-content: space-evenly;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 .services-list div{
   width: 14%;
@@ -422,4 +428,56 @@ nav {
   background-color: rgb(78,72,156);
   border: 4px solid;
   border-image: linear-gradient(to bottom, #f00, #00f) 1;
+}
+.pricing{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.services-list1 h2{
+  width: 100%;
+  font-size: large;
+  background-color: lightgreen;
+  font-weight: bolder;
+  /* display: block; */
+}
+.services-list1{
+  display: flex;
+  justify-content: space-evenly;
+  /* margin-top: 50px; */
+  /* margin-bottom: 3p0px; */
+}
+.services-list1 div{
+  width: 14%;
+  /* height: 100px; */
+  border: 2px solid ;
+  border-image: linear-gradient(to bottom, #f00, #00f) 1; 
+}
+.priceheading{
+  margin-bottom: 8px;
+}
+.featurePricing{
+  margin-bottom: 8px;
+}
+.pricefeatures{
+  text-decoration: underline;
+  font-size: small;
+}
+.cta-button1 {
+  background-color: rgb(192, 192, 192);
+  border: 0 solid #ec6907;
+  /* border-radius: 6px; */
+  box-shadow: 0 8px 15px rgba(50,46,89,.15);
+  display: block;
+  font-size: 18px;
+  max-width: 200px!important;
+  /* padding: 11px; */
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  width: 100%;
+}
+.services-list1 h2:hover,.services-list1 button:hover{
+  background-color: lightblue;
 }
