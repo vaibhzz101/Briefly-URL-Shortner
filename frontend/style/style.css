@@ -502,7 +502,7 @@ footer p{
   max-width: 90%;
   width: 100%;
   /* border: 2px solid cyan; */
-  padding: 126px 0 22px;
+  padding: 50px 0 22px;
   display: flex;
   justify-content: space-around;
 }
