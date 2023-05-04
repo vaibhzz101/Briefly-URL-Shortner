@@ -568,4 +568,7 @@ footer p{
   .displayNone{
     display: none;
   }
+  .middle{
+    text-align: center;
+  }
 }
