@@ -1,10 +1,13 @@
 const express = require("express")
 const app = express()
 app.use(express.json())
+const cors = require("cors")
+app.use(cors({origin:"*"}));
 require("dotenv").config()
 const connection = require("./connection/db")
 const urlRouter = require("./routes/url.route")
 const url = require("./models/urlmodel")
+
 
 app.use("/url", urlRouter)
 
