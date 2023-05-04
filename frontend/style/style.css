@@ -188,7 +188,7 @@ nav {
     color: #fff;
     display: block;
     font-size: 18px;
-    max-width: 200px!important;
+    max-width: 210px!important;
     padding: 11px;
     position: relative;
     text-align: center;
@@ -486,7 +486,7 @@ nav {
 }
 footer{
   width: 100%;
-  height: 500px;
+  /* height: 500px; */
   background-color: #0A0A24;
   display: flex;
   justify-content: center;
@@ -528,4 +528,44 @@ footer p{
 }
 .lowerFooter{
   text-align: center;
+}
+@media (max-width: 790px){
+  .services-list{
+    display: grid;
+    /* border: 2px solid black; */
+    grid-template-columns: repeat(2,1fr);
+  }
+  .services-list div{
+    width: 90%;
+  }
+  .services-list1{
+    display: grid;
+    /* border: 2px solid black; */
+    grid-template-columns: repeat(2,1fr);
+  }
+  .services-list1 div{
+    width: 100%;
+  }
+  .services-list1 button{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+  }
+  .footer-content{
+    margin: 5px;
+  }
+}
+
+@media (max-width: 430px){
+  .footer-wrapper{
+    display: flex;
+    justify-content: center;
+  }
+  .displayNone{
+    display: none;
+  }
 }
