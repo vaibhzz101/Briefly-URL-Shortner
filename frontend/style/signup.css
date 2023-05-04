@@ -5,10 +5,12 @@
     font-family: Montserrat-Web, Montserrat, -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif;
 }
 
+
 #rohit_login{
     width: 330px;
     margin: auto;
     padding: 25px;
+    margin-bottom: 0%;
 }
 #rohit_login > h2{
     font-size: 24px;
@@ -32,15 +34,23 @@
     height: 40px;
     margin-top: 5px;
 }
-#rohit_login > div > div:nth-child(2){
+#rohit_login > div > div:nth-child(1){
+    display: flex;
+justify-content: space-between;
+margin-bottom: 10px;
+}
+#rohit_login > div > div:nth-child(1) > div{
+    width: 47%;
+}
+#rohit_login > div > div:nth-child(3){
     margin-top: 15px;
 }
 
-#rohit_login > div > div:nth-child(3){
+#rohit_login > div > div:nth-child(4){
     margin-top: 20px;
     width: 100%;
 }
-#rohit_login > div > div:nth-child(3) button{
+#rohit_login > div > div:nth-child(4) button{
     width: 100%;
     height: 40px;
     background-color: #4e6d58;
@@ -49,46 +59,26 @@
     font-weight: 700;
     border: none;
 }
-#rohit_login > div > div:nth-child(3) button:hover{
+#rohit_login > div > div:nth-child(4) button:hover{
   cursor: pointer;
 }
 #rohit_login p {
     font-weight: 400;
 }
-#rohit_login > div > div:nth-child(4){
-    
-height: 0.5px;
-background-color: grey;
-width: 100%;
-margin-top: 35px;
-}
 
-#rohit_login > div > div:nth-child(5){
-
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    color:rgb(82, 82, 228);
-    align-items: center;
-    }
-
-    
-#rohit_login > div > div:nth-child(5) p:hover{
-text-decoration: underline;
-cursor: pointer;
-    }
-  #rohit_login > div > div:nth-child(6){
+  #rohit_login > div > div:nth-child(5){
     
 height: 0.5px;
 background-color: grey;
 width: 100%;
 margin-top: 20px;
 }
-#rohit_login > div > div:nth-child(7){
+#rohit_login > div > div:nth-child(6){
    display: flex;
    justify-content: center;
-   margin-top: 10px;
+   margin-top: 20px;
+   margin-bottom: 10px;
     }
-    #rohit_login > div > div:nth-child(7)  a{
+    #rohit_login > div > div:nth-child(6)  a{
         color: rgb(82, 82, 228);
          }
