@@ -7,6 +7,10 @@ header{
     background-color : #0a0a24;
     display: flex;
     justify-content: center;
+    position: fixed; top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; 
 }
 .content-box{
     width: 100%;
@@ -83,6 +87,10 @@ nav {
     background-color: #4E489C;
     color: white;
   }
+  .button.signup1 {
+    background-color: #848491;
+    color: white;
+  }
   
   .button.signup:hover {
     background-color: #726DB0;
@@ -128,7 +136,7 @@ nav {
     background-image: url("../img/bl-ink-home-bg-1-min.png");
     background-size: cover;
     background-position: center top;
-    padding-top: 40px;
+    padding-top: 70px;
     padding-bottom: 67px;
     /* height: 700px; */
   }
@@ -188,7 +196,7 @@ nav {
     color: #fff;
     display: block;
     font-size: 18px;
-    max-width: 200px!important;
+    max-width: 210px!important;
     padding: 11px;
     position: relative;
     text-align: center;
@@ -387,7 +395,7 @@ nav {
   /* border: 2px solid red; */
   margin-top: 30px;
   width: 90%;
-  height: 300px;
+  /* height: 300px; */
 }
 .services-wrapper h1{
   margin-bottom: 50px;
@@ -433,6 +441,9 @@ nav {
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-bottom: 40px;
+  height: 100%;
+  /* border: 2px solid black; */
 }
 .services-list1 h2{
   width: 100%;
@@ -480,4 +491,92 @@ nav {
 }
 .services-list1 h2:hover,.services-list1 button:hover{
   background-color: lightblue;
+}
+footer{
+  width: 100%;
+  /* height: 500px; */
+  background-color: #0A0A24;
+  display: flex;
+  justify-content: center;
+}
+footer h4{
+  color: #19B08A;
+}
+footer p{
+  color: white;
+  font-size: small;
+}
+.footer-wrapper{
+  max-width: 90%;
+  width: 100%;
+  /* border: 2px solid cyan; */
+  padding: 50px 0 22px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-content{
+  /* border: 2px solid black; */
+  line-height: 3.5rem;
+  color: lightblue;
+}
+
+#playStoreIco img{
+  margin-bottom: 20px;
+  height: 30px;
+  width: 30px;
+}
+#appStoreIco img{
+  height: 30px;
+  height: 30px;
+  margin-top: 2px;
+}
+#download{
+  display: flex;
+  justify-content: center;
+}
+.lowerFooter{
+  text-align: center;
+}
+@media (max-width: 790px){
+  .services-list{
+    display: grid;
+    /* border: 2px solid black; */
+    grid-template-columns: repeat(2,1fr);
+  }
+  .services-list div{
+    width: 90%;
+  }
+  .services-list1{
+    display: grid;
+    /* border: 2px solid black; */
+    grid-template-columns: repeat(2,1fr);
+  }
+  .services-list1 div{
+    width: 100%;
+  }
+  .services-list1 button{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+  }
+  .footer-content{
+    margin: 5px;
+  }
+}
+
+@media (max-width: 430px){
+  .footer-wrapper{
+    display: flex;
+    justify-content: center;
+  }
+  .displayNone{
+    display: none;
+  }
+  .middle{
+    text-align: center;
+  }
 }

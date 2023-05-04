@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brief.ly - Admin Login</title>
+    <link rel="stylesheet" href="./style/adminlogin.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+          <div class="content-box">
+            <div class="logo">
+              <img src=".\img\Brief.ly.png" alt="">
+            </div>
+            <nav>
+         
+              <label for="nav-toggle" class="nav-toggle-label">&#9781;</label>
+              <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#" class="button signup">📝 Sign Up</a></li>
+                <li><a href="#" class="button login">👤 Login</a></li> -->
+              </ul>
+            </nav>          
+          </div>
+        </div>
+      </header>
+    <div class="container">
+        <div class="main">
+            <div class="form-box">
+                <h2>Admin Log In</h2>
+                <form id="signin" class="input-group">
+                    <input id="admin-userid" type="text" class="input-field" placeholder="User ID"
+                    required>
+                    <input id="admin-password" type="password" class="input-field" placeholder="Enter Password"
+                    required>
+                    <input type="checkbox" class="checkbox"><span>Rember Password</span>
+                    <button id="admin-btn" type="submit" class="submit-btn">Log In as Admin</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./src/adminlogin.js"></script>
