@@ -7,6 +7,10 @@ header{
     background-color : #0a0a24;
     display: flex;
     justify-content: center;
+    position: fixed; top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; 
 }
 .content-box{
     width: 100%;
@@ -132,7 +136,7 @@ nav {
     background-image: url("../img/bl-ink-home-bg-1-min.png");
     background-size: cover;
     background-position: center top;
-    padding-top: 40px;
+    padding-top: 70px;
     padding-bottom: 67px;
     /* height: 700px; */
   }
