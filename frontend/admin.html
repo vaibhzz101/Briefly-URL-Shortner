@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style/admin.css"> 
+    <link rel="stylesheet" href="./style/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@100;200;300;400&family=Roboto:ital,wght@0,100;0,300;1,400&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="wrapper">
+          <div class="content-box">
+            <div class="logo">
+              <img src="img\Brief.ly.png" alt="">
+            </div>
+            <nav>
+              <label for="nav-toggle" class="nav-toggle-label">&#9781;</label>
+              <ul class="menu">
+                <li> <p class="nav-element" id="nav-urls">Users</p></li>
+                <li> <p class="nav-element" id="nav-stats">Stats</p></li>
+                <li><p class="nav-element dropbtn" id="nav-element" onclick="dropdown_menu()">Admin</p></li>
+              </ul>
+            </nav> 
+            <div class="dropdown">
+                <div class="dropdown-content" id="dropdown-content">
+                    <a href="#" id="nav-logout-btn"><span class="material-symbols-outlined">
+                        logout
+                        </span>Log out</a>
+                </div>         
+          </div>
+        </div>
+      </header>
+    <!-- <header>
+        <div class="nav-bar" id="nav-bar">
+            <a href="./admin.html"><img src="./img/Brief.ly.png" alt="" class="nav-logo"
+                    id="nav-logo"></a>
+            <div>
+                <p class="nav-element" id="nav-element-urls">Users</p>
+                <p class="nav-element" id="nav-element-stats">Stats</p>
+                <p class="nav-element dropbtn" id="nav-element" onclick="dropdown_menu()">Admin</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropdown-content" id="dropdown-content">
+                <a href="#" id="nav-logout-btn"><span class="material-symbols-outlined">
+                    logout
+                    </span>Log out</a>
+            </div>
+        </div>
+    </header> -->
+    <main>
+        <div class="mainbox" id="mainbox">
+            <div class="overview-card" id="overview-card1">
+                <p>ALL LINKS</p>
+                <p><strong id="all-links">0</strong><span><img src="./img/link.png"
+                            alt=""></span></p>
+            </div>
+            <div class="overview-card" id="overview-card2">
+                <p>TOTAL CLICKS</p>
+                <p><strong id="all-clicks">0</strong><span><img src="./img/tap.png"
+                            alt=""></span></p>
+            </div>
+            <div class="overview-card" id="overview-card3">
+                <p>ALL USERS</p>
+                <p><strong id="this-month">0</strong><span><img src="./img/chain.png"
+                            alt=""></span></p>
+            </div>
+        </div>
+        <div class="main-shortener-box" id="main-shortener-box">
+            <form action="" class="shortener-input" id="shortener-input">
+                <select name="" id="search-options">
+                    <option value="name">Name</option>
+                    <option value="_id">Client Id</option>
+                    <option value="email">Email Id</option>
+                </select>
+                <input type="text" class="full-url" id="full-url" placeholder="Enter your query" required>
+                <button type="submit" , class="full-url-btn" , id="full-url-btn">Search</button>
+            </form>
+            <div class="url-list-box" id="url-list-box">
+                <div class="url-list" id="url-list">
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer></footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="./src/admin.js"></script>
+
+</html>
