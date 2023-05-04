@@ -1,5 +1,4 @@
 // base url
-// const baseUrl = "https://lillyput.onrender.com";
 // const baseurl = "http://localhost:2020";
 
 // navigation elements
