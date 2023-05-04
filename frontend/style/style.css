@@ -83,6 +83,10 @@ nav {
     background-color: #4E489C;
     color: white;
   }
+  .button.signup1 {
+    background-color: #848491;
+    color: white;
+  }
   
   .button.signup:hover {
     background-color: #726DB0;
