@@ -6,7 +6,11 @@ const connection = require("./connection/db")
 const urlRouter = require("./routes/url.route")
 const url = require("./models/urlmodel")
 
+const { googlerouter } = require("./login-routes/g-oauthroute")
+const { githubRouter }=require("./login-routes/github.routes")
 app.use("/url", urlRouter)
+app.use("/user", googlerouter)
+app.use("/", githubRouter)
 
 app.get("/", (req, res)=>{
 
@@ -25,9 +29,6 @@ app.get("/:shortID", async (req, res)=>{
         console.log(error)
     }
 })
-
-
-
 
 const PORT = process.env.PORT || 8013
 app.listen(PORT, async ()=>{
