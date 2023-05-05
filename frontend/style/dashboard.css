@@ -214,7 +214,7 @@ main {
 /* graph and charts */
 .main-graph-chart {
     /* border: 1px solid black; */
-    width: 90%;
+    width: 50%;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
