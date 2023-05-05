@@ -4,7 +4,8 @@ const { passport3 } = require("../connection/github-oauth");
 
 const githubRouter = express.Router();
 
-
+const cookieParser = require('cookie-parser');
+githubRouter.use(cookieParser())
 githubRouter.get(
     "/auth/github",
     passport3.authenticate("github", { scope: ["user:email"] })
@@ -24,3 +25,4 @@ githubRouter.get(
 );
 
 module.exports = { githubRouter };
+

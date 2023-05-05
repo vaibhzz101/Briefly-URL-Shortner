@@ -1,8 +1,8 @@
 var GitHubStrategy = require("passport-github2").Strategy;
 const passport3 = require("passport");
 require("dotenv").config();
-const { redisclient } = require("./redis")
-const { UserModel } = require("../models/user.schema");
+const { redisclient } = require("../connection/redis")
+const { UserModel } = require("../models/user.models");
 const { v4: uuidv4 } = require("uuid");
 
 passport3.use(
