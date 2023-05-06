@@ -323,8 +323,7 @@ function displayStats(userInfo) {
                     <div>
                         <a target="_blank" class="shortUrl" id="shortUrl" href=${baseUrl}/short/${element.short}>${baseUrl}/short/${element.short}</a>
                         <div>
-                            <img id="shortUrl-clipboard" src="../resources/dashboard/url-list/copy.png" alt=${baseUrl}/short/${element.short}>
-                            <img id="shortUrl-delete" src="../resources/dashboard/url-list/delete.png" alt=${element._id}>
+                            
                         </div>
                     </div>
                     <div id=${element._id}>
