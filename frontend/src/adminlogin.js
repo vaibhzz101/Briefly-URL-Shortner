@@ -46,7 +46,7 @@ form.addEventListener("submit", (e) => {
   if (pass1 != "" && email1 != "") {
     data.forEach((ele) => {
       if (ele.email == email1 && ele.pass == pass1) {
-        localStorage.setItem("e", emailI)
+        localStorage.setItem("e", email1)
         alert("Welcome Back Admin !");
         self.location = "./admin.html"
       }
