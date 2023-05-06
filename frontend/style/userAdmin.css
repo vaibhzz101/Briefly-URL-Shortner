@@ -1,0 +1,95 @@
+/* body{
+    background-color: rgb(185, 207, 248);
+} */
+table{
+    width: 67%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.597);
+    border-radius: 20px;
+    /* margin-left: 40px; */
+}
+th{
+    font-size: 22px;
+    padding: 10px 4px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+.CD{
+    padding: 12px;
+    text-align: center;
+    font-weight: 600;
+    color:crimson;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.CD button{
+    background-color: rgb(255, 85, 119);
+    color: #fff;
+    font-weight: 700;
+    padding: 6px;
+    text-align: center;
+    border-radius: 6px;
+    border: none;
+}
+.CD button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 50, 91);
+    transition: 0.2s;
+}
+.frm{
+    width: 28%;
+    margin: auto;
+    border-radius: 10px;
+    background-color:rgba(179, 199, 236, 0.771);
+    padding: 30px 20px;
+}
+.frm h1{
+    margin: auto;
+    margin-bottom: 20px;
+    color: rgb(60, 60, 60);
+}
+.frm label{
+    font-weight: 700;
+    color: rgb(60, 60, 60);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+form input{
+    width: 60%;
+    height: 30px;
+    font-size: 18px;
+    padding-left: 2px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.submit{
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.submit:hover{
+    background-color: rgb(235, 71, 104);
+    cursor: pointer;
+}
+.flex{
+    display: flex;
+    width: 97%;
+    margin: auto;
+    margin-top: 35px;
+    justify-content: space-between;
+}

@@ -3,8 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    /* background-color: #F8F9FA; */
-    background-color: #FFFFFF;
+  background-color:  rgba(255, 255, 255, 0.597);;
     background-image: url("../img/bl-ink-home-bg-1-min.png");
     background-attachment: fixed;
     background-size: cover;
@@ -79,7 +78,7 @@ main {
     align-items: flex-start;
     border-radius: 10px;
     /* color: #2f3a4c; */
-    color: #5a677a;
+    color: #000000;
     
     display: flex;
     flex-direction: column;
@@ -90,25 +89,43 @@ main {
 
 .overview-card:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    color: blue;
+    color: rgb(246, 246, 248);
     background-color: #132B3E;
     border-image: linear-gradient(to bottom, rgb(0, 255, 17), rgb(120, 72, 33)) 1;
 }
 
 .mainbox>:nth-child(1) {
-    background-color: #f8f9fa;
+    background-color:  rgba(255, 255, 255, 0.597);
 }
 
 .mainbox>:nth-child(2) {
-    background-color: #f1fdf8;
+    background-color:  rgba(255, 255, 255, 0.597);
 }
 
 .mainbox>:nth-child(3) {
-    background-color: #f0f8ff;
+    background-color:  rgba(255, 255, 255, 0.597);
+}
+.mainbox>:nth-child(4) {
+    background-color:  rgba(255, 255, 255, 0.597);;
 }
 
-.mainbox>:nth-child(4) {
-    background-color: #f7e8e7;
+/*  */
+.mainbox>:nth-child(1):hover {
+    background-color : #0a0a24;
+}
+.mainbox>:nth-child(2):hover {
+    background-color : #0a0a24;
+}
+
+.mainbox>:nth-child(3):hover {
+    background-color : #0a0a24;
+}
+
+
+.mainbox>:nth-child(4):hover {
+    background-color : #0a0a24;
+
+    
 }
 
 .overview-card h2 {
