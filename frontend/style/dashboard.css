@@ -102,7 +102,7 @@ main {
     border-radius: 8px;
     padding: 0px 20px;
     border-radius: 8px;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -112,7 +112,7 @@ main {
     border: none;
     padding: 5px 20px;
     border-radius: 8px;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
 }
 
 .shortener-input>input:focus {
@@ -128,7 +128,7 @@ main {
     color: #ffffff;
     font-size: 18px;
     border-radius: 8px;
-    background-color: #00AEF0;
+    background-color: #2ad841;
 }
 
 
@@ -136,7 +136,7 @@ main {
 
     width: 90%;
     margin: 20px auto;
-    color: #5a677a;
+    color: #44546b;
     border-radius: 8px;
     padding: 20px 20px;
     border-radius: 8px;
@@ -145,7 +145,7 @@ main {
 }
 
 ::placeholder{
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .url-list>hr{
