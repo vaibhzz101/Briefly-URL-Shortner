@@ -17,9 +17,8 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style\style.css" />
     <link rel="icon" type="image/x-icon" href="../resources/nav-bar/lillyput-cricle.png" />
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="../style/dashboard.css" />
-    <link rel="stylesheet" href="../style/dashboard-mediaqueries.css" />
+    <link rel="stylesheet" href="./style/dashboard.css" />
+    <link rel="stylesheet" href="./style/dashboard-mediaqueries.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@100;200;300;400&family=Roboto:ital,wght@0,100;0,300;1,400&display=swap"
         rel="stylesheet" />
@@ -40,8 +39,7 @@
                     <a href="dashboard.html"><img src="img\Brief.ly.png" alt="" /></a>
                 </div>
                 <nav>
-                    <!-- <div class="logo">Logo</div> -->
-                    <!-- <input type="checkbox" id="nav-toggle"> -->
+        
                     <label for="nav-toggle" class="nav-toggle-label">&#9781;</label>
                     <ul class="menu">
                         <li><a href="dashboard.html">Home</a></li>
@@ -62,50 +60,32 @@
             <div class="overview-card" id="overview-card1">
                 <p>All Urls</p>
                 <p>
-                    <strong id="all-links">0</strong><span><img src="../resources/dashboard/overview/link.png"
+                    <strong id="all-links">0</strong><span><img src="./img/link.png"
                             alt="" /></span>
                 </p>
             </div>
             <div class="overview-card" id="overview-card2">
                 <p>Total Clicks</p>
                 <p>
-                    <strong id="all-clicks">0</strong><span><img src="../resources/dashboard/overview/tap.png"
+                    <strong id="all-clicks">0</strong><span><img src="./img/tap.png"
                             alt="" /></span>
                 </p>
             </div>
-            <!-- <div class="overview-card" id="overview-card3">
-                <p>Links added This Month</p>
-                <p>
-                    <strong id="this-month">0</strong><span><img src="../resources/dashboard/overview/chain.png"
-                            alt="" /></span>
-                </p>
-            </div>
-            <div class="overview-card" id="overview-card4">
-                <p>Incremented This Month</p>
-                <p>
-                    <strong id="inc-this-month">0</strong><span><img src="../resources/dashboard/overview/bar-chart.png"
-                            alt="" /></span>
-                </p> -->
-            </div>
+
         </div>
         <div class="main-shortener-box" id="main-shortener-box">
             <form action="" class="shortener-input" id="shortener-input">
                 <input type="text" class="full-url" id="full-url" placeholder="Paste long url and shrink it" required />
                 <button type="submit" , class="full-url-btn" , id="full-url-btn">
                     Shrink
-                </button>
-            </form>
+                </button> 
             <div class="url-list-box" id="url-list-box">
 
             </div>
         </div>
-        <!-- <div class="main-graph-chart" id="main-graph-chart">
-            <div>
-                <div>
-                    <span>Total Clicks</span><canvas id="total-click-chart" class="total-click-chart"></canvas>
-                </div>
-            </div> -->
+     
         </div>
+
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>

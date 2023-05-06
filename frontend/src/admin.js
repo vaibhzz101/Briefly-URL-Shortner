@@ -12,21 +12,12 @@ const logout_btn = document.getElementById("nav-logout-btn");
 // overview elements
 const all_links = document.getElementById("all-links");
 const all_clicks = document.getElementById("all-clicks");
-// const this_month = document.getElementById("this-month");
-// const inc_this_month = document.getElementById("inc-this-month");
 
 // shrink form
 const shrink_form = document.getElementById("shortener-input");
 const shrink_full_url = document.getElementById("full-url");
 const search_category = document.getElementById("search-options");
 const full_url_btn = document.getElementById("full-url-btn");
-
-// stats elements
-const total_click = document.getElementById("total-click-chart");
-const devices_click = document.getElementById("devices-click-chart");
-const platforms_click = document.getElementById("platform-click-chart");
-const location_click = document.getElementById("location-click-chart");
-const browser_click = document.getElementById("browser-click-chart");
 
 // url list elements
 const url_list_box = document.getElementById("url-list-box");
