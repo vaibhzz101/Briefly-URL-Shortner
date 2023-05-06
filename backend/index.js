@@ -7,14 +7,15 @@ const urlRouter = require("./routes/url.route")
 const url = require("./models/urlmodel")
 
 const { googlerouter } = require("./login-routes/g-oauthroute")
-const { githubRouter }=require("./login-routes/github.routes")
+const { githubRouter } = require("./login-routes/github.route")
+
 app.use("/url", urlRouter)
 app.use("/user", googlerouter)
 app.use("/", githubRouter)
 
 app.get("/", (req, res)=>{
 
-    res.send("<h1>Welcome</h1>")
+    res.send(`<h1>Welcome</h1>`)
 })
 
 app.get("/:shortID", async (req, res)=>{
