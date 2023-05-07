@@ -4,7 +4,7 @@ const shortid = require("shortid")
 const urlSchema = mongoose.Schema({
     longurl: {type : String, required : true},
     shorturl: {type : String, required : true, unique: true, default: shortid()},
-    visited: {type :String, required: true, default: 0},
+    visited: {type :Number, required: true, default: 0},
     created: {type: Date, default: Date.now()}
 })
 
