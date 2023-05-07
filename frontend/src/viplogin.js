@@ -60,12 +60,11 @@ signInButton.addEventListener('click', () => {
 
 // Sign In Logic
         const hashedPass = bcrypt.hashSync(signInform[1], 5)
+        console.log(hashedPass);
         let signInform = document.getElementById("signin-form")
-        let signedInName = document.getElementById("signedIn_Name")
-        let signupBtn = document.getElementById("signUpBtn")
-        let logout = document.getElementById("logOutBtn")
         signInform.addEventListener("submit",(e)=>{
             e.preventDefault()
+            console.log(hashedPass);
             let data = {
                 email : signInform[0].value,
                 password : hashedPass
