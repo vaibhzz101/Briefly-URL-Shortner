@@ -1,15 +1,17 @@
 .loginContainer{
     width: 100%;
-    margin-top: 55px;
+    margin-top: 52px;
     display: flex;
     justify-content: center;
     background-image: url("../img/bl-ink-home-bg-1-min.png");
     background-size: cover;
     background-position: center top;
-    height: 100%;
+    /* height: 400px; */
 }
 .loginWrapper{
-    padding-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* margin-top: 350px; */
     width: 100%
 }
 .createAccount{
@@ -22,7 +24,7 @@
 	box-sizing: border-box;
 }
 
-body {
+/* body {
 	background: #f6f5f7;
 	display: flex;
 	justify-content: center;
@@ -31,7 +33,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
-}
+} */
 
 .h1 {
 	font-weight: bold;
@@ -115,7 +117,7 @@ input {
 	overflow: hidden;
 	width: 768px;
 	max-width: 100%;
-	min-height: 480px;
+	min-height: 580px;
 }
 
 .form-container {
@@ -243,7 +245,8 @@ input {
 	width: 40px;
 }
 
-footer {
+
+/* footer {
     background-color: #222;
     color: #fff;
     font-size: 14px;
@@ -266,4 +269,4 @@ footer i {
 footer a {
     color: #3c97bf;
     text-decoration: none;
-}
+} */

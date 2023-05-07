@@ -1,0 +1,18 @@
+{
+  "RegisterUser": [
+    {
+      "first_name": "Vipul",
+      "last_name": "Kumar",
+      "email": "vipul.kr.vks@gmail.com",
+      "password": "Vips@2608",
+      "id": 1
+    },
+    {
+      "first_name": "Vipul",
+      "last_name": "Singh",
+      "email": "vipul@gmail.com",
+      "password": "Vips@2608",
+      "id": 2
+    }
+  ]
+}

@@ -35,8 +35,13 @@
               <li><a href="#services">Services</a></li>
               <li><a href="#pricing">Pricing</a></li>
               <li><a href="#about">About</a></li>
+<<<<<<< HEAD
               <li><a href="login.html" class="button signup" >📝 Sign Up</a></li>
               <li><a href="login.html" class="button login" >👤 Login</a></li>
+=======
+              <li><a href="login.html" class="button signup">📝 Sign Up</a></li>
+              <li><a href="login.html" class="button login">👤 Login</a></li>
+>>>>>>> 702122030d611bee9f3e95045938d944f809f44b
             </ul>
           </nav>          
         </div>
@@ -45,8 +50,8 @@
     <div class="loginContainer">
         <div class="loginWrapper">
             <div class="container" id="container">
-                <div class="form-container sign-up-container">
-                    <form action="#">
+                <div class="form-container sign-up-container" >
+                    <form id="signup-form" method="post">
                         <h1 class="h1 createAccount">Create Account</h1>
                         <div class="social-container">
                             <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
@@ -54,14 +59,15 @@
                         </div>
                         
                         <span>or use your email for registration</span>
-                        <input type="text" name="name" placeholder="Name" />
-                        <input type="email" name="email" placeholder="Email" />
-                        <input type="password" name="password" placeholder="Password" />
-                        <button>Sign Up</button>
+                        <input type="text" name="name" placeholder="First Name" id="name"/>
+                        <input type="text" name="name" placeholder="Last Name" id="lastname"/>
+                        <input type="email" name="email" placeholder="Email" id="email" />
+                        <input type="password" name="password" placeholder="Password" id="password"/>
+                        <button type="submit" type="submit">Sign Up</button>
                     </form>
                 </div>
                 <div class="form-container sign-in-container">
-                    <form method="POST" action="">
+                    <form method="POST" id="signin-form">
                         <h1>Sign in</h1>
                         <div class="social-container">
                             <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
@@ -72,7 +78,8 @@
                         <input type="email" name="email" placeholder="Email" />
                         <input type="password" name="password" placeholder="Password" />
                         <a href="#">Forgot your password?</a>
-                        <button>Sign In</button>
+                        <button type="submit">Sign In</button>
+                        <a href="adminlogin.html">Login As Admin</a>
                     </form>
                 </div>
                 <div class="overlay-container">
@@ -92,7 +99,54 @@
             </div>
         </div>
     </div>
-
+    <footer id="about" class="footersignup">
+        <div class="footer-wrapper">
+          <div class="footer-content displayNone">
+            <h4>Popular Links</h4>
+            <a href="#"><p>Anatomy of Short Link</p></a>
+            <a href="#"><p>Read Our Reviews</p></a>
+            <a href="#"><p>Watch Our Videos</p></a>
+            <a href="#"><p>Anatomy of Short Link</p></a>
+          </div>
+          <div class="footer-content displayNone">
+            <h4>Product</h4>
+            <a href="#services"><p>Features</p></a>
+            <a href="#pricing"><p>Pricing</p></a>
+            <a href="login.html"><p>Login</p></a>
+            <a href="login.html"><p>Sign Up</p></a>
+            <a href="#"><p>Quote Request</p></a>
+          </div>
+          <div class="footer-content displayNone">
+            <h4>Resources</h4>
+            <a href="#"><p>Api Documentation</p></a>
+            <a href="#"><p>Blog</p></a>
+            <a href="#"><p>Help Center</p></a>
+            <a href="#"><p>Case Studies</p></a>
+            <a href="#"><p>Enterprise Highlights</p></a>
+          </div>
+          <div class="footer-content displayNone">
+            <h4>Company</h4>
+            <a href="#"><p>About</p></a>
+            <a href="#"><p>Career</p></a>
+            <a href="#"><p>Customers</p></a>
+            <a href="#"><p>GDPR</p></a>
+            <a href="#"><p>Contact Us</p></a>
+          </div>
+          <div class="footer-content middle">
+            <h4>Download Our App</h4><br>
+            <div id="download">
+              <a id="playStoreIco" href="#"><img src="img\Daco_172464.png" alt=""></a><br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a id="appStoreIco" href="#"><img src="img\pngwing.com (1).png" alt=""></a>
+            </div>
+            <h4>Contact Us</h4>
+            <a href="#"><u>contactus@brief.ly</u></a>
+          </div>
+        </div>
+      </footer>
+      <div class="lowerFooter">
+        &#169; Briefly | All Rights are Reserved&#174; | Terms And Services &#8482;<br>
+        Made With ❤️ By Masai Students
+      </div>
 
 
 
