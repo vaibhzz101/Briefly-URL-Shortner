@@ -12,7 +12,7 @@ userRouter.get("/allusers", async (req, res)=>{
         res.json(allUsersData)
     } catch (error) {
         console.log(error)
-        res.status(400).send({"msg": "Erron in getting all users"})
+        res.status(400).send({"msg": "Error in getting all users"})
     }
 })
 
