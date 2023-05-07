@@ -24,7 +24,7 @@ const url_list_box = document.getElementById("url-list-box");
 
 // making a get request to server for getting user information
 async function getUserInfo() {
-    const response = await fetch(`${baseUrl}/admin/getUsersInfo/`);
+    const response = await fetch(`${baseUrl}/user/allusers`);
     const userInfo = await response.json();
     displayStats(userInfo);
 }
@@ -53,168 +53,32 @@ logout_btn.addEventListener("click", async () => {
     }
 })
 
-// display data
-// function displayStats(userInfo) {
-//     let date = [], date_wise_clicks = [];
-//     let devices = [], devices_wise_clicks = [];
-//     let platforms = [], platforms_wise_clicks = [];
-//     let locations = [], locations_wise_clicks = [];
-//     let browsers = [], browsers_wise_clicks = [];
+
+  all_links.innerText = userInfo.links.length;
+
+   let clickCount = 0;
+    for (let i = 0; i < userInfo.clicks.length; i++) {
+      clickCount += userInfo.clicks[i]._id;
+   }
+     all_clicks.innerText = clickCount;
+
+  if (!clickCount) {
+        url_list.style.display = "block";
+        stats.style.display = "none";
+    }
 
 
-//     for (let i = 0; i < userInfo.date.length; i++) { date.push(userInfo.date[i]._id); date_wise_clicks.push(userInfo.date[i].count); }
-//     date.sort((a, b) => { return a - b });
 
-//     for (let i = 0; i < userInfo.devices.length; i++) { devices.push(userInfo.devices[i]._id); devices_wise_clicks.push(userInfo.devices[i].count); }
-
-//     for (let i = 0; i < userInfo.system.length; i++) { platforms.push(userInfo.system[i]._id); platforms_wise_clicks.push(userInfo.system[i].count); }
-
-//     for (let i = 0; i < userInfo.location.length; i++) { locations.push(userInfo.location[i]._id); locations_wise_clicks.push(userInfo.location[i].count); }
-
-//     for (let i = 0; i < userInfo.browsers.length; i++) { browsers.push(userInfo.browsers[i]._id); browsers_wise_clicks.push(userInfo.browsers[i].count); }
-
-//     all_links.innerText = userInfo.links.length;
-
-//     let clickCount = 0;
-//     for (let i = 0; i < userInfo.clicks.length; i++) {
-//         clickCount += userInfo.clicks[i]._id;
-//     }
-//     all_clicks.innerText = clickCount;
-
-//     if (!clickCount) {
-//         url_list.style.display = "block";
-//         stats.style.display = "none";
-//     }
-
-//     let thisMonth = date;
-//     const d = new Date();
-//     let m = d.getMonth();
-//     let count = 0, lastCount = 0;
-//     thisMonth.forEach((date) => {
-//         let month = date.split("/");
-//         if (month[1] == m + 1) {
-//             count++;
-//         }
-//         else if (month[1] - 1 == m) {
-//             lastCount++;
-//         }
-//     })
-//     this_month.innerText = userInfo.data.length;
-
-//     let xValues = date;
-//     new Chart(total_click, {
-//         type: "line",
-//         data: {
-//             labels: xValues,
-//             datasets: [{
-//                 data: date_wise_clicks,
-//                 borderColor: 'rgb(255, 99, 132)',
-//                 fill: true,
-//                 backgroundColor: "#f7e8e7"
-//             }]
-//         },
-//         options: {
-//             legend: { display: false },
-//             scales: {
-//                 y: {
-//                     beginAtZero: true
-//                 }
-//             }
-//         }
-//     });
-
-//     new Chart(devices_click, {
-//         type: 'doughnut',
-//         data: {
-//             labels: devices,
-//             datasets: [{
-//                 label: '# of Votes',
-//                 data: devices_wise_clicks,
-//                 borderWidth: 1,
-//                 backgroundColor: [
-//                     'rgb(255, 99, 132)',
-//                     'rgb(54, 162, 235)',
-//                     'rgb(255, 205, 86)',
-//                     '#4BC0C0',
-//                     '#C9CBCF'
-//                 ],
-//                 hoverOffset: 4
-//             }]
-//         }
-//     });
-
-//     new Chart(platforms_click, {
-//         type: 'polarArea',
-//         data: {
-//             labels: platforms,
-//             datasets: [{
-//                 label: 'My First Dataset',
-//                 data: platforms_wise_clicks,
-//                 backgroundColor: [
-//                     'rgb(75, 192, 192)',
-//                     'rgb(255, 99, 132)',
-//                     'rgb(255, 205, 86)',
-//                     'rgb(201, 203, 207)',
-//                     'rgb(54, 162, 235)'
-//                 ]
-//             }]
-//         }
-//     });
-
-//     xValues = locations;
-//     new Chart(location_click, {
-//         type: "bar",
-//         data: {
-//             labels: xValues,
-//             datasets: [{
-//                 data: locations_wise_clicks,
-//                 borderColor: "red",
-//                 fill: true,
-//                 backgroundColor: "#f7e8e7"
-//             }]
-//         },
-//         options: {
-//             legend: { display: false },
-//             scales: {
-//                 y: {
-//                     beginAtZero: true
-//                 }
-//             }
-//         }
-//     });
-
-//     new Chart(browser_click, {
-//         type: 'pie',
-//         data: {
-//             labels: browsers,
-//             datasets: [{
-//                 label: '# of Votes',
-//                 data: browsers_wise_clicks,
-//                 borderWidth: 1,
-//                 backgroundColor: [
-//                     'rgb(255, 99, 132)',
-//                     'rgb(54, 162, 235)',
-//                     'rgb(255, 205, 86)',
-//                     '#4BC0C0',
-//                     '#C9CBCF'
-//                 ],
-//                 hoverOffset: 4
-//             }]
-//         }
-//     });
-
- 
-
-//     url_list_box.innerHTML = userInfo.data.map(element => {
-//         return `
-//             <div class="url-list" id="url-list">
-//                 <p id="client-id" ><strong>Client ID: </strong>${element._id}</p>
-//                 <p><strong>Name: </strong>${element.name}</p>
-//                 <p><strong>Email ID: </strong>${element.email}</p>
-//                 <button id=${element._id} >Client Info</button>
-//             </div>
-//         `
-//     }).join("")
+  url_list_box.innerHTML = userInfo.data.map(element => {
+       return `
+            <div class="url-list" id="url-list">
+               <p id="client-id" ><strong>Client ID: </strong>${element._id}</p>
+                <p><strong>Name: </strong>${element.name}</p>
+                <p><strong>Email ID: </strong>${element.email}</p>
+                                 <button id=${element._id} >Client Info</button>
+           </div>
+        `
+   }).join("")
 
 //     const client_btn_arr = document.querySelectorAll("#url-list button");
 //     client_btn_arr.forEach(btn => {
@@ -233,7 +97,7 @@ shrink_form.addEventListener("submit", async (event) => {
     const category = search_category.value || "name";
     const searchValue = shrink_full_url.value;
 
-    const request = await fetch(`${baseUrl}/admin?category=${category}&term=${searchValue}`)
+    const request = await fetch(`${baseUrl}/user?category=${category}&term=${searchValue}`)
     const response = await request.json();
     url_list_box.innerHTML = null;
     url_list_box.innerHTML = response.map(element => {
@@ -242,7 +106,7 @@ shrink_form.addEventListener("submit", async (event) => {
                 <p id="client-id" ><strong>Client ID: </strong>${element._id}</p>
                 <p><strong>Name: </strong>${element.name}</p>
                 <p><strong>Email ID: </strong>${element.email}</p>
-                <button id=${element._id} >Client Info</button>
+                <button id=${element._id} >User Details</button>
             </div>
         `
     }).join("")
