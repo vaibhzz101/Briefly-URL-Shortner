@@ -9,6 +9,8 @@ urlRouter.post("/assign", authenticate, async(req, res)=>{
         if (!longurl) return res.json({msg: "Please Provide URL"})
         
         const newurl = new url({longurl})
+        newurl.author = res.locals.userId
+        // console.log(res.locals)
         await newurl.save()
         res.send(newurl)
     } catch (error) {
