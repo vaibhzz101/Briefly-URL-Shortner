@@ -93,3 +93,7 @@ form input{
     margin-top: 35px;
     justify-content: space-between;
 }
+.overview-card-span{
+    display: flex;
+    justify-content: space-between;
+}

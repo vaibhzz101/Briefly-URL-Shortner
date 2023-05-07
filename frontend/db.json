@@ -13,6 +13,13 @@
       "email": "vipul@gmail.com",
       "password": "Vips@2608",
       "id": 2
+    },
+    {
+      "first_name": "vaibhav",
+      "last_name": "kumar",
+      "email": "vaibhav@gmail.com",
+      "password": "Vaibhav@123",
+      "id": 3
     }
   ]
 }
