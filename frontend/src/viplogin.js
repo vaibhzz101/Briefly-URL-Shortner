@@ -12,7 +12,7 @@ signInButton.addEventListener('click', () => {
 
 
 
-const form = document.getElementById('signup-form');
+    const form = document.getElementById('signup-form');
     const nameInput = document.getElementById('name');
     const lastnameInput = document.getElementById('lastname');
     const emailInput = document.getElementById('email');

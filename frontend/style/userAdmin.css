@@ -98,6 +98,4 @@ tbody>tr:nth-child(odd){
 tbody>tr:nth-child(even):hover{
     background-color: #ffb3003e;
 }
-tbody>tr:nth-child(odd):hover{
-    background-color: #ffb3005a;
-}
+
