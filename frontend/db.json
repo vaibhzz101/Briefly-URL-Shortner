@@ -1,0 +1,1157 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Good Life Sugar (M) 1 kg",
+      "image": "https://www.jiomart.com/images/product/600x600/491551493/good-life-sugar-m-1-kg-product-images-o491551493-p491551493-0-202204281542.jpg",
+      "strikeprice": 55,
+      "price": 46,
+      "stock": "In stock",
+      "category": "staple"
+    },
+    {
+      "id": 3,
+      "name": "Daawat Devaaya Basmati Rice 1 kg",
+      "image": "https://www.jiomart.com/images/product/600x600/490005639/daawat-devaaya-basmati-rice-1-kg-product-images-o490005639-p490005639-0-202205172326.jpg",
+      "strikeprice": 125,
+      "price": 92,
+      "stock": "In stock",
+      "category": "staple"
+    },
+    {
+      "id": 4,
+      "name": "Maggi 2-Minute Masala Instant Noodles 560 g",
+      "image": "https://www.jiomart.com/images/product/600x600/490003834/maggi-2-minute-masala-instant-noodles-560-g-product-images-o490003834-p490003834-0-202203150702.jpg",
+      "strikeprice": 105,
+      "price": 90,
+      "stock": "In stock",
+      "category": "bakery"
+    },
+    {
+      "id": 5,
+      "name": "Amul Butter 500 g (Carton)",
+      "image": "https://www.jiomart.com/images/product/600x600/490001392/amul-butter-500-g-carton-product-images-o490001392-p490001392-0-202203152128.jpg",
+      "strikeprice": 255,
+      "price": 245,
+      "stock": "In stock",
+      "category": "dairy"
+    },
+    {
+      "id": 6,
+      "name": "Amul Fresh Paneer 200 g (Pack)",
+      "image": "https://www.jiomart.com/images/product/600x600/490174895/amul-fresh-paneer-200-g-pack-product-images-o490174895-p490174895-0-202203170432.jpg",
+      "strikeprice": 80,
+      "price": 75,
+      "stock": "In stock",
+      "category": "dairy"
+    },
+    {
+      "id": 7,
+      "name": "Kissan Fresh Tomato Ketchup 1.2 kg",
+      "image": "https://www.jiomart.com/images/product/600x600/492391349/kissan-fresh-tomato-ketchup-1-2-kg-product-images-o492391349-p590809928-0-202203150627.jpg",
+      "strikeprice": 160,
+      "price": 106,
+      "stock": "In stock",
+      "category": "staple"
+    },
+    {
+      "id": 8,
+      "name": "Red Label Leaf Tea 1 kg",
+      "image": "https://www.jiomart.com/images/product/600x600/490001992/red-label-leaf-tea-1-kg-product-images-o490001992-p490001992-0-202203152304.jpg",
+      "strikeprice": 570,
+      "price": 419,
+      "stock": "In stock",
+      "category": "bevrages"
+    },
+    {
+      "id": 10,
+      "name": "B Natural Guava Gush Juice 1 L",
+      "image": "https://www.jiomart.com/images/product/600x600/490249967/b-natural-guava-gush-juice-1-l-product-images-o490249967-p490249967-0-202203151704.jpg",
+      "discount": true,
+      "strikeprice": 120,
+      "price": 60,
+      "stock": "In stock",
+      "category": "bevrages"
+    },
+    {
+      "id": 11,
+      "name": "7Up 2.5 L",
+      "image": "https://www.jiomart.com/images/product/600x600/490005200/7up-2-5-l-product-images-o490005200-p490005200-0-202206101526.jpg",
+      "strikeprice": 95,
+      "price": 77,
+      "stock": "In stock",
+      "category": "bevrages"
+    },
+    {
+      "id": 15,
+      "name": "Gowardhan Pure Cow Ghee 1 L (Pouch)",
+      "image": "https://www.jiomart.com/images/product/600x600/490010244/gowardhan-pure-cow-ghee-1-l-pouch-product-images-o490010244-p490010244-0-202203150918.jpg",
+      "strikeprice": 609,
+      "price": 566,
+      "stock": "In stock",
+      "category": "dairy"
+    },
+    {
+      "id": 18,
+      "name": "Plum Premium Indian Pack 500 g",
+      "image": "https://www.jiomart.com/images/product/600x600/591238255/plum-premium-indian-pack-500-g-0-20220506.jpg",
+      "strikeprice": 185,
+      "price": 149,
+      "stock": "In stock",
+      "category": "fruits"
+    },
+    {
+      "id": 19,
+      "name": "Fresh Dates Yellow Premium Indian Pack 500 g",
+      "image": "https://www.jiomart.com/images/product/600x600/591043451/fresh-dates-yellow-premium-indian-pack-500-g-0-20220216.jpg",
+      "strikeprice": 300,
+      "price": 139,
+      "stock": "In stock",
+      "category": "fruits"
+    },
+    {
+      "id": 20,
+      "name": "Custard Apple Premium Indian 2 Pc (Approx 400 g - 600 g)",
+      "image": "https://www.jiomart.com/images/product/600x600/591980101/custard-apple-premium-indian-2-pc-approx-750-g-950-g-0-20220607.jpg",
+      "strikeprice": 200,
+      "price": 179,
+      "stock": "In stock",
+      "category": "fruits"
+    },
+    {
+      "id": 21,
+      "name": "Reliance Jewels 10 GM 999 Silver Coin",
+      "image": "https://www.jiomart.com/images/product/420x420/590087519/reliance-jewels-10g-999-silver-coin-0-20201111.jpg",
+      "strikeprice": 1095,
+      "price": 775,
+      "stock": "In stock",
+      "category": "scoin"
+    },
+    {
+      "id": 22,
+      "name": "Reliance Jewels 5 GM 24KT Gold Coin",
+      "image": "https://www.jiomart.com/images/product/420x420/590087517/reliance-jewels-5g-24kt-gold-coin-0-20201111.jpg",
+      "strikeprice": 28699,
+      "price": 27264,
+      "stock": "In stock",
+      "category": "gcoin"
+    },
+    {
+      "id": 23,
+      "name": "Reliance Jewels Ag 99.9 8.95 gm Saraswati Silver Idol",
+      "image": "https://www.jiomart.com/images/product/420x420/591219033/reliance-jewels-ag-99-9-8-95-gm-saraswati-silver-idol-0-20220413.jpg",
+      "strikeprice": 2575,
+      "price": 2318,
+      "stock": "In stock",
+      "category": "idol"
+    },
+    {
+      "id": 24,
+      "name": "Reliance Jewels Ag 99.9 2.65 gm Lakshmi Silver Idol",
+      "image": "https://www.jiomart.com/images/product/420x420/591219028/reliance-jewels-ag-99-9-2-65-gm-lakshmi-silver-idol-0-20220413.jpg",
+      "strikeprice": 2375,
+      "price": 2018,
+      "stock": "In stock",
+      "category": "idol"
+    },
+    {
+      "id": 25,
+      "name": "Reliance Jewels 1 GM 24KT Gold Coin",
+      "image": "https://www.jiomart.com/images/product/420x420/590087515/reliance-jewels-1g-24kt-gold-coin-0-20201111.jpg",
+      "strikeprice": 5455,
+      "price": 5805,
+      "stock": "In stock",
+      "category": "gcoin"
+    },
+    {
+      "id": 26,
+      "name": "Reliance Jewels Ag 99.9 17.28 gm Shiva Silver Idol",
+      "image": "https://www.jiomart.com/images/product/420x420/591219034/reliance-jewels-ag-99-9-17-28-gm-shiva-silver-idol-0-20220413.jpg",
+      "strikeprice": 5455,
+      "price": 5805,
+      "stock": "Out of stock",
+      "category": "idol"
+    },
+    {
+      "id": 27,
+      "name": "Reliance Jewels Flower Round Gold 24 KT (999) 4 GM Coin",
+      "image": "https://www.jiomart.com/images/product/420x420/591211832/reliance-jewels-flower-round-gold-24-kt-999-4-gm-coin-0-20220324.jpg",
+      "strikeprice": 21303,
+      "price": 22663,
+      "stock": "In stock",
+      "category": "gcoin"
+    },
+    {
+      "id": 28,
+      "name": "Reliance Jewels RL Silver (999) 25 GM Coin",
+      "image": "https://www.jiomart.com/images/product/420x420/591211809/reliance-jewels-rl-silver-999-25-gm-coin-0-20220324.jpg",
+      "strikeprice": 1685,
+      "price": 2246,
+      "stock": "In stock",
+      "category": "scoin"
+    },
+    {
+      "id": 29,
+      "name": "Reliance Jewels Silver 999 5 GM Coin",
+      "image": "https://www.jiomart.com/images/product/420x420/591211780/reliance-jewels-silver-999-5-gm-coin-0-20220324.jpg",
+      "strikeprice": 516,
+      "price": 999,
+      "stock": "Out of stock",
+      "category": "scoin"
+    },
+    {
+      "id": 30,
+      "name": "Reliance Jewels Ag 99.9 13.21 gm Lakshmi Ganesh Silver Idol",
+      "image": "https://www.jiomart.com/images/product/420x420/591219014/reliance-jewels-ag-99-9-13-21-gm-lakshmi-ganesh-silver-idol-0-20220413.jpg",
+      "strikeprice": 3430,
+      "price": 3811,
+      "stock": "In stock",
+      "category": "idol"
+    },
+    {
+      "id": 31,
+      "name": "Reliance Jewels Ag 99.9 7.43 gm Bal Krishna Silver Idol",
+      "image": "https://www.jiomart.com/images/product/420x420/591219023/reliance-jewels-ag-99-9-7-43-gm-bal-krishna-silver-idol-0-20220413.jpg",
+      "strikeprice": 1839,
+      "price": 2455,
+      "stock": "In stock",
+      "category": "idol"
+    },
+    {
+      "id": 32,
+      "name": "Reliance Jewels Ganesh Gold 24 KT (999) 10 GM Coin",
+      "image": "https://www.jiomart.com/images/product/420x420/591211817/reliance-jewels-ganesh-gold-24-kt-999-10-gm-coin-0-20220324.jpg",
+      "strikeprice": 54543,
+      "price": 58561,
+      "stock": "In stock",
+      "category": "gcoin"
+    },
+    {
+      "id": 33,
+      "name": "Reliance Jewels Laxmi Gold 24 KT 999 1 GM Coin",
+      "image": "https://www.jiomart.com/images/product/420x420/591211785/reliance-jewels-laxmi-gold-24-kt-999-1-gm-coin-0-20220324.jpg",
+      "strikeprice": 5455,
+      "price": 5100,
+      "stock": "In stock",
+      "category": "gcoin"
+    },
+    {
+      "id": 34,
+      "name": "Reliance Jewels 2 GM 24KT Gold Coin",
+      "image": "https://www.jiomart.com/images/product/420x420/590087559/reliance-jewels-2g-24kt-gold-coin-0-20201113.jpg",
+      "strikeprice": 10911,
+      "price": 8249,
+      "stock": "In stock",
+      "category": "gcoin"
+    },
+    {
+      "id": 35,
+      "name": "Reliance Jewels Ag 99.9 8.73 gm Lakshmi Ganesh Saraswati Silver Idol",
+      "image": "https://www.jiomart.com/images/product/420x420/591219020/reliance-jewels-ag-99-9-8-73-gm-lakshmi-ganesh-saraswati-silver-idol-0-20220413.jpg",
+      "strikeprice": 2318,
+      "price": 2100,
+      "stock": "Out of stock",
+      "category": "idol"
+    },
+    {
+      "id": 36,
+      "name": "Reliance Jewels Ag 99.9 8.5 gm Hanuman Silver Idol",
+      "image": "https://www.jiomart.com/images/product/420x420/591219021/reliance-jewels-ag-99-9-8-5-gm-hanuman-silver-idol-0-20220413.jpg",
+      "strikeprice": 2410,
+      "price": 2200,
+      "stock": "In stock",
+      "category": "idol"
+    },
+    {
+      "id": 37,
+      "name": "Reliance Jewels Laxmi-Ganesh Silver (999) 10 GM Coin",
+      "image": "https://www.jiomart.com/images/product/420x420/591211806/reliance-jewels-laxmi-ganesh-silver-999-10-gm-coin-0-20220324.jpg",
+      "strikeprice": 775,
+      "price": 699,
+      "stock": "In stock",
+      "category": "scoin"
+    },
+    {
+      "id": 38,
+      "name": "Reliance Jewels Laxmi Silver (999) 10 GM Coin",
+      "image": "https://www.jiomart.com/images/product/420x420/590087559/reliance-jewels-2g-24kt-gold-coin-0-20201113.jpg",
+      "strikeprice": 911,
+      "price": 775,
+      "stock": "In stock",
+      "category": "scoin"
+    },
+    {
+      "id": 39,
+      "name": "Reliance Jewels Bal Gopal Ovel Gold 24 KT (999) 4 GM Coin",
+      "image": "https://www.jiomart.com/images/product/420x420/591211826/reliance-jewels-bal-gopal-ovel-gold-24-kt-999-4-gm-coin-0-20220324.jpg",
+      "strikeprice": 24899,
+      "price": 21303,
+      "stock": "In stock",
+      "category": "gcoin"
+    },
+    {
+      "id": 40,
+      "name": "Reliance Jewels Mahavir Ji Round Gold 24 KT (999) 4 GM Coin",
+      "image": "https://www.jiomart.com/images/product/420x420/591211822/reliance-jewels-mahavir-ji-round-gold-24-kt-999-4-gm-coin-0-20220324.jpg",
+      "strikeprice": 24911,
+      "price": 21303,
+      "stock": "In stock",
+      "category": "gcoin"
+    },
+    {
+      "id": 41,
+      "name": "Black Collection Men's Color Block Hooded Neck Full Sleeve T-Shirt ",
+      "image": "https://www.jiomart.com/images/product/600x750/rvbfeefwht/black-collection-men-s-color-block-hooded-neck-full-sleeve-t-shirt-sku-bcn012_redblack_xl-product-images-rvbfeefwht-0-202207151302.jpg",
+      "strikeprice": 1499,
+      "price": 500,
+      "stock": "In stock",
+      "category": "men"
+    },
+    {
+      "id": 42,
+      "name": "Women Olive Solid Polyester Dress (M)",
+      "image": "https://www.jiomart.com/images/product/600x750/rvj2wdqkx3/women-olive-solid-polyester-dress-m-product-images-rvj2wdqkx3-0-202207131922.jpg",
+      "strikeprice": 1499,
+      "price": 499,
+      "stock": "In stock",
+      "category": "women"
+    },
+    {
+      "id": 43,
+      "name": "Boys Multicolored Designer Cotton Pack of 1 Kurta Pyjama Set",
+      "image": "https://www.jiomart.com/images/product/600x750/rvyk1v3ig4/digimart-boys-multicolored-designer-cotton-pack-of-1-kurta-pyjama-set-product-images-rvyk1v3ig4-0-202202220912.jpg",
+      "strikeprice": 1199,
+      "price": 279,
+      "stock": "In stock",
+      "category": "boys"
+    },
+    {
+      "id": 44,
+      "name": "701-PINK-22",
+      "image": "https://www.jiomart.com/images/product/600x750/rvoyvxl5ug/701-pink-22-product-images-rvoyvxl5ug-0-202207070320.jpg",
+      "strikeprice": 1599,
+      "price": 349,
+      "stock": "In stock",
+      "category": "girls"
+    },
+    {
+      "id": 45,
+      "name": "Chakradhar Distributors Men Genuine Leather Belt (Brown)",
+      "image": "https://www.jiomart.com/images/product/600x750/rvhh8ugte8/chakradhar-distributors-men-genuine-leather-belt-brown-product-images-rvhh8ugte8-0-202207011456.jpg",
+      "strikeprice": 1299,
+      "price": 499,
+      "stock": "In stock",
+      "category": "men"
+    },
+    {
+      "id": 46,
+      "name": "Aawari Women Multicolor Printed Cotton Rayon Blend Pack Of 2 Palazzos (XL)",
+      "image": "https://www.jiomart.com/images/product/600x750/rv412dbdum/aawari-women-multicolor-printed-cotton-rayon-blend-pack-of-2-palazzos-xl-product-images-rv412dbdum-0-202206181644.jpg",
+      "strikeprice": 1150,
+      "price": 725,
+      "stock": "In stock",
+      "category": "women"
+    },
+    {
+      "id": 47,
+      "name": "KIDOS-CHILD Blue Kid's Sports Shoes",
+      "image": "https://www.jiomart.com/images/product/600x750/rvpbkkr4dj/kidos-child-blue-kid-s-sports-shoes-product-images-rvpbkkr4dj-3-202206071918.jpg",
+      "strikeprice": 1119,
+      "price": 826,
+      "stock": "In stock",
+      "category": "boys"
+    },
+    {
+      "id": 48,
+      "name": "Apnisha Girls Net EmbroideRd Gown Dress (Purple_26)",
+      "image": "https://www.jiomart.com/images/product/600x750/rvqyjaplnj/apnisha-girls-net-embroiderd-gown-dress-purple_26-product-images-rvqyjaplnj-0-202205161943.jpg",
+      "strikeprice": 1999,
+      "price": 479,
+      "stock": "In stock",
+      "category": "girls"
+    },
+    {
+      "id": 49,
+      "name": "7BTN_SKY BLUE_38",
+      "image": "https://www.jiomart.com/images/product/600x750/rvij7ye3qk/7btn_sky-blue_38-product-images-rvij7ye3qk-0-202205151402.jpg",
+      "strikeprice": 2499,
+      "price": 499,
+      "stock": "In stock",
+      "category": "men"
+    },
+    {
+      "id": 50,
+      "name": "Embellished Silk Blend Single Saree",
+      "image": "https://www.jiomart.com/images/product/600x750/rvze4e6och/laheja-women-multicolor1-embellished-silk-blend-single-saree-product-images-rvze4e6och-0-202205251839.jpg",
+      "strikeprice": 1999,
+      "price": 449,
+      "stock": "In stock",
+      "category": "women"
+    },
+    {
+      "id": 51,
+      "name": "NEW GEN Boys Yellow Printed Cotton Dungaree",
+      "image": "https://www.jiomart.com/images/product/600x750/rvspmmiewf/new-gen-boys-yellow-printed-cotton-dungaree-product-images-rvspmmiewf-2-202205191219.jpg",
+      "strikeprice": 699,
+      "price": 277,
+      "stock": "In stock",
+      "category": "boys"
+    },
+    {
+      "id": 52,
+      "name": "Women's Handbag",
+      "image": "https://www.jiomart.com/images/product/600x750/rvxktzn0vg/women-s-handbag-product-images-rvxktzn0vg-0-202205281553.jpg",
+      "strikeprice": 2500,
+      "price": 1199,
+      "stock": "In stock",
+      "category": "girls"
+    },
+    {
+      "id": 53,
+      "name": "Analogue Sports And Rajasthan Royals (Rr) Ipl Black And Blue Colour Analog",
+      "image": "https://www.jiomart.com/images/product/600x750/rvu8cdwsp8/neutron-modish-analogue-sports-and-rajasthan-royals-rr-ipl-black-and-blue-colour-analog-plastic-and-genuine-leather-belt-2-watch-combo-for-boys-and-men-brm30-ipl7-product-images-rvu8cdwsp8-0-202207161224.jpg",
+      "strikeprice": 1402,
+      "price": 402,
+      "stock": "In stock",
+      "category": "men"
+    },
+    {
+      "id": 54,
+      "name": "Black Dial Silver Bracelet Girl's & Women's Wrist Watch",
+      "image": "https://www.jiomart.com/images/product/600x750/rv9ozxl5be/iik-collection-analogue-pink-dial-silver-bracelet-girl-s-women-s-wrist-watch-iik-3030w-product-images-rv9ozxl5be-0-202206281759.jpg",
+      "strikeprice": 1499,
+      "price": 349,
+      "stock": "In stock",
+      "category": "women"
+    },
+    {
+      "id": 55,
+      "name": "Kid's fancy denim and cotton dungaree suits",
+      "image": "https://www.jiomart.com/images/product/600x750/rvz85dsops/kid-s-fancy-denim-and-cotton-dungaree-suits-product-images-rvz85dsops-0-202206011724.png",
+      "strikeprice": 250,
+      "price": 220,
+      "stock": "In stock",
+      "category": "boys"
+    },
+    {
+      "id": 56,
+      "name": "D'chica Sequined Fabric Bow Applique Ballerinas Pink",
+      "image": "https://www.jiomart.com/images/product/600x750/rvxzq76prn/d-chica-sequined-fabric-bow-applique-ballerinas-pink-product-images-rvxzq76prn-3-202205142309.jpg",
+      "strikeprice": 1199,
+      "price": 799,
+      "stock": "In stock",
+      "category": "girls"
+    },
+    {
+      "id": 57,
+      "name": "Shopyholik Men Black Solid Lycra Blend Track Pant",
+      "image": "https://www.jiomart.com/images/product/600x750/rvu4uxvkxl/shopyholik-men-black-solid-lycra-blend-track-pant-product-images-rvu4uxvkxl-0-202202250853.jpg",
+      "strikeprice": 999,
+      "price": 289,
+      "stock": "In stock",
+      "category": "men"
+    },
+    {
+      "id": 58,
+      "name": "ZIKUPS3147-XL",
+      "image": "https://www.jiomart.com/images/product/600x750/rvjigevpmn/zikups3147-xl-product-images-rvjigevpmn-0-202205220509.jpg",
+      "strikeprice": 2024,
+      "price": 643,
+      "stock": "In stock",
+      "category": "women"
+    },
+    {
+      "id": 59,
+      "name": "Front Open Shirt & Pant for Infant",
+      "image": "https://www.jiomart.com/images/product/600x750/rvtb56dmkn/front-open-shirt-pant-for-infant-product-images-rvtb56dmkn-0-202205160918.jpg",
+      "strikeprice": 900,
+      "price": 329,
+      "stock": "In stock",
+      "category": "boys"
+    },
+    {
+      "id": 60,
+      "name": "Apnisha Girls Georgette Embroidered Fit & Flaired Dress (Sky_340)",
+      "image": "https://www.jiomart.com/images/product/600x750/rvtlagmlun/apnisha-girls-georgette-embroidered-fit-flaired-dress-sky_340-product-images-rvtlagmlun-0-202205151816.jpg",
+      "strikeprice": 1499,
+      "price": 499,
+      "stock": "In stock",
+      "category": "girls"
+    },
+    {
+      "id": 61,
+      "name": "Everest Green Stainless Steel Lighter",
+      "image": "https://www.jiomart.com/images/product/150x150/491377754/everest-green-stainless-steel-lighter-peeler-knife-set-3-pcs-product-images-o491377754-p491377754-0-202203170446.jpg",
+      "strikeprice": 99,
+      "price": 59,
+      "stock": "In stock",
+      "category": "essential"
+    },
+    {
+      "id": 62,
+      "name": "Anjali green power free blender",
+      "image": "https://www.jiomart.com/images/product/150x150/491418160/anjali-green-power-free-blender-product-images-o491418160-p491418160-0-202206281508.jpg",
+      "strikeprice": 225,
+      "price": 59,
+      "stock": "In stock",
+      "category": "essential"
+    },
+    {
+      "id": 63,
+      "name": "Stainless steel Dabba",
+      "image": "https://www.jiomart.com/images/product/150x150/491901683/home-one-stainless-steel-deep-dabba-set-of-3-no-101112-product-images-o491901683-p590309471-0-202207081846.jpg",
+      "strikeprice": 355,
+      "price": 299,
+      "stock": "In stock",
+      "category": "essential"
+    },
+    {
+      "id": 64,
+      "name": "Nakoda silky brown",
+      "image": "https://www.jiomart.com/images/product/150x150/491491526/nakoda-silky-brown-plastic-basket-with-lid-305x305x198-mm-product-images-o491491526-p590141007-0-202207081746.jpg",
+      "strikeprice": 329,
+      "price": 129,
+      "stock": "In stock",
+      "category": "not-essential"
+    },
+    {
+      "id": 65,
+      "name": "Princeware store Fresh Orange",
+      "image": "https://www.jiomart.com/images/product/150x150/490436066/princeware-store-fresh-orange-round-plastic-container-5-pcs-product-images-o490436066-p490436066-0-202207081826.jpg",
+      "strikeprice": 369,
+      "price": 179,
+      "stock": "Out of stock",
+      "category": "essential"
+    },
+    {
+      "id": 66,
+      "name": "Home One Easy twist",
+      "image": "https://www.jiomart.com/images/product/150x150/491934152/home-one-easytwist-brown-printed-plastic-container-1-5-l-set-of-3-product-images-o491934152-p590048979-0-202207081300.jpg",
+      "strikeprice": 329,
+      "price": 199,
+      "stock": "In stock",
+      "category": "not-essential"
+    },
+    {
+      "id": 67,
+      "name": "Home one stainless steelpuri Dabba",
+      "image": "https://www.jiomart.com/images/product/150x150/491901716/home-one-stainless-steel-puri-dabba-with-plain-lid-no-8-product-images-o491901716-p590309476-0-202207081817.jpg",
+      "strikeprice": 120,
+      "price": 99,
+      "stock": "In stock",
+      "category": "essential"
+    },
+    {
+      "id": 68,
+      "name": "Home one easy twist Pink",
+      "image": "https://www.jiomart.com/images/product/150x150/491934154/home-one-easytwist-pink-printed-plastic-container-1-5-l-set-of-3-product-images-o491934154-p590048981-0-202207081259.jpg",
+      "strikeprice": 359,
+      "price": 129,
+      "stock": "In stock",
+      "category": "essential"
+    },
+    {
+      "id": 69,
+      "name": "Home One Stainless induction steel kadai",
+      "image": "https://www.jiomart.com/images/product/150x150/491901731/home-one-stainless-steel-induction-bottom-kadai-size-12-product-images-o491901731-p590309489-0-202207101729.jpg",
+      "strikeprice": 429,
+      "price": 299,
+      "stock": "In stock",
+      "category": "essential"
+    },
+    {
+      "id": 70,
+      "name": "Home duo Red plastic",
+      "image": "https://www.jiomart.com/images/product/150x150/491934164/home-one-duo-red-plastic-steel-container-300-ml-set-of-2-product-images-o491934164-p590041306-0-202207081806.jpg",
+      "strikeprice": 275,
+      "price": 119,
+      "stock": "Out of stock",
+      "category": "not-essential"
+    },
+    {
+      "id": 71,
+      "name": "Polyset lunch box",
+      "image": "https://www.jiomart.com/images/product/150x150/491379352/polyset-lock-it-multicolour-rectangular-plastic-container-400-ml-with-inner-container-70-ml-product-images-o491379352-p590124245-0-202207081852.jpg",
+      "strikeprice": 189,
+      "price": 99,
+      "stock": "In stock",
+      "category": "essential"
+    },
+    {
+      "id": 72,
+      "name": "Home one deluxe Stainless tiffin",
+      "image": "https://www.jiomart.com/images/product/150x150/491901726/home-one-deluxe-stainless-steel-loose-tiffin-7x3-product-images-o491901726-p590309477-0-202203281302.jpg",
+      "strikeprice": 475,
+      "price": 199,
+      "stock": "In stock",
+      "category": "essential"
+    },
+    {
+      "id": 73,
+      "name": "Everest plastic mesh strainer",
+      "image": "https://www.jiomart.com/images/product/150x150/491934164/home-one-duo-red-plastic-steel-container-300-ml-set-of-2-product-images-o491934164-p590041306-0-202207081806.jpg",
+      "strikeprice": 49,
+      "price": 19,
+      "stock": "Out of stock",
+      "category": "not-essential"
+    },
+    {
+      "id": 74,
+      "name": "Home one wave yellow plastic bottle",
+      "image": "https://www.jiomart.com/images/product/150x150/491934471/home-one-wave-yellow-plastic-water-bottle-1-l-set-of-4-product-images-o491934471-p590157022-0-202203150323.jpg",
+      "strikeprice": 245,
+      "price": 139,
+      "stock": "In stock",
+      "category": "essential"
+    },
+    {
+      "id": 75,
+      "name": "Princeware sorted rectangular plastic",
+      "image": "https://www.jiomart.com/images/product/150x150/491506689/princeware-assorted-rectangular-plastic-container-set-4-2-l-7-pcs-product-images-o491506689-p590826924-0-202207081756.jpg",
+      "strikeprice": 225,
+      "price": 49,
+      "stock": "In stock",
+      "category": "essential"
+    },
+    {
+      "id": 76,
+      "name": "Shrusti gold round cooker",
+      "image": "https://www.jiomart.com/images/product/150x150/491231630/srushti-gold-round-aluminium-pressure-cooker-2-3-l-set-of-2-single-lid-product-images-o491231630-p491231630-0-202207081902.jpg",
+      "strikeprice": 1225,
+      "price": 1049,
+      "stock": "In stock",
+      "category": "essential"
+    },
+    {
+      "id": 77,
+      "name": "Home one steel flat",
+      "image": "https://www.jiomart.com/images/product/150x150/491901722/home-one-stainless-steel-flat-bottom-tope-size-12-product-images-o491901722-p590309486-0-202207081902.jpg",
+      "strikeprice": 285,
+      "price": 149,
+      "stock": "In stock",
+      "category": "essential"
+    },
+    {
+      "id": 78,
+      "name": "Home one punto stainless bottle",
+      "image": "https://www.jiomart.com/images/product/150x150/491934447/home-one-punto-stainless-steel-water-bottle-1-l-product-images-o491934447-p590992215-0-202204261843.jpg",
+      "strikeprice": 385,
+      "price": 109,
+      "stock": "In stock",
+      "category": "essential"
+    },
+    {
+      "id": 79,
+      "name": "Nakoda bolt brown plastic",
+      "image": "https://www.jiomart.com/images/product/150x150/491439859/nakoda-bolt-bown-plastic-multi-purpose-stand-cutlery-rack-product-images-o491439859-p591001097-0-202204261842.jpg",
+      "strikeprice": 125,
+      "price": 75,
+      "stock": "Out of stock",
+      "category": "not-essential"
+    },
+    {
+      "id": 80,
+      "name": "Anjali Stainless opener 4 in 1",
+      "image": "https://www.jiomart.com/images/product/150x150/490971250/anjali-stainless-steel-4-in-1-peeler-product-images-o490971250-p490971250-0-202206281514.jpg",
+      "strikeprice": 65,
+      "price": 49,
+      "stock": "In stock",
+      "category": "essential"
+    },
+    {
+      "id": 81,
+      "name": "JioPhone Next 32 GB, 2 GB RAM, Blue Smartphone, LS1542QWN",
+      "image": "https://www.jiomart.com/images/product/420x420/581107339/jiophone-next-32-gb-2-gb-ram-blue-smartphone-ls1542qwn-digital-o581107339-p590838016-0-202110301448.jpeg",
+      "strikeprice": 7299,
+      "price": 5999,
+      "stock": "In stock",
+      "category": "mobile"
+    },
+    {
+      "id": 82,
+      "name": "MI Home Security Camera",
+      "image": "https://www.jiomart.com/images/product/420x420/491503417/mi-home-security-camera-digital-o491503417-p590045677-0-202010110622.jpeg",
+      "strikeprice": 2800,
+      "price": 2700,
+      "stock": "In stock",
+      "category": "camera"
+    },
+    {
+      "id": 83,
+      "name": "HP 682 Original Ink Cartridge, Tri-color",
+      "image": "https://www.jiomart.com/images/product/420x420/491897372/hp-682-3ym76aa-original-ink-cartridge-tri-color-digital-o491897372-p590049339-0-202205022116.jpeg",
+      "strikeprice": 2000,
+      "price": 828,
+      "stock": "In stock",
+      "category": "computers"
+    },
+    {
+      "id": 84,
+      "name": "Toshiba 80 cm (32 inch) HD Ready Vidaa OS Smart LED TV with ADS Panel and dbx-tv, 32L5050",
+      "image": "https://www.jiomart.com/images/product/420x420/491893298/toshiba-80-cm-32-inch-hd-ready-vidaa-os-smart-led-tv-with-ads-panel-and-dbx-tv-32l5050-digital-o491893298-p590035481-0-202204272106.png",
+      "strikeprice": 19900,
+      "price": 15000,
+      "stock": "In stock",
+      "category": "tv"
+    },
+    {
+      "id": 85,
+      "name": "Samsung Galaxy M52 128 GB, 6 GB RAM Icy Blue, Mobile Phone",
+      "image": "https://www.jiomart.com/images/product/420x420/491998466/samsung-galaxy-m52-128-gb-6-gb-ram-icy-blue-smartphone-digital-o491998466-p590989306-0-202201071123.jpeg",
+      "strikeprice": 29999,
+      "price": 20999,
+      "stock": "Out of stock",
+      "category": "mobile"
+    },
+    {
+      "id": 86,
+      "name": "Nikon D810 DSLR Camera with 24 - 120 mm NIKKOR VR Lens Kit",
+      "image": "https://www.jiomart.com/images/product/420x420/491295742/nikon-d810-dslr-camera-with-24-120-mm-nikkor-vr-lens-kit-digital-o491295742-p590442947-0-202108130502.jpeg",
+      "strikeprice": 244950,
+      "price": 216990,
+      "stock": "In stock",
+      "category": "camera"
+    },
+    {
+      "id": 87,
+      "name": "ZunVolt Mini Wi-Fi UPS for 12V Wi-Fi Router and Modem | Power Backup up to 5 Hours",
+      "image": "https://www.jiomart.com/images/product/420x420/rvqmaebemx/zunvolt-mini-wi-fi-ups-for-12v-wi-fi-router-and-modem-power-backup-up-to-5-hours-product-images-orvqmaebemx-p591186471-0-202203011844.jpg",
+      "strikeprice": 3499,
+      "price": 899,
+      "stock": "In stock",
+      "category": "computers"
+    },
+    {
+      "id": 88,
+      "name": "ONEPLUS 81.28 cm (32 inch) HD Smart LED TV, 32Y1",
+      "image": "https://www.jiomart.com/images/product/420x420/491895010/oneplus-81-28-cm-32-inch-hd-smart-led-tv-32y1-digital-o491895010-p590034844-0-202204082038.jpeg",
+      "strikeprice": 19999,
+      "price": 13999,
+      "stock": "In stock",
+      "category": "tv"
+    },
+    {
+      "id": 89,
+      "name": "Itel Vision 2S 32 GB, 2 GB RAM, Deep Blue, Mobile Phone",
+      "image": "https://www.jiomart.com/images/product/420x420/491997913/itel-vision-2s-32-gb-2-gb-ram-deep-blue-smartphone-digital-o491997913-p590837962-0-202110292157.jpeg",
+      "strikeprice": 8499,
+      "price": 5499,
+      "stock": "In stock",
+      "category": "mobile"
+    },
+    {
+      "id": 90,
+      "name": "Nikon COOLPIX P950 16 MP, 83x Zoom Digital Camera with 24-2000 mm Lens Kit",
+      "image": "https://www.jiomart.com/images/product/420x420/491898119/nikon-coolpix-p950-16-mp-83x-zoom-digital-camera-with-24-2000-mm-lens-kit-digital-o491898119-p590441324-0-202108121839.jpeg",
+      "strikeprice": 66995,
+      "price": 62490,
+      "stock": "Out of stock",
+      "category": "camera"
+    },
+    {
+      "id": 91,
+      "name": "Bajaj 5 meter 3 Sockets Extension Reel, White, 11003",
+      "image": "https://www.jiomart.com/images/product/420x420/492579370/bajaj-5-meter-3-sockets-extension-reel-white-11003-digital-o492579370-p590972370-0-202201010352.jpeg",
+      "strikeprice": 355,
+      "price": 299,
+      "stock": "In stock",
+      "category": "computers"
+    },
+    {
+      "id": 92,
+      "name": "Hisense 108 cm (43 inch) 3Yr Warranty 4K Ultra HD Smart Certified Android LED TV 43A6GE (Black) with Dolby Vision and ATMOS",
+      "image": "https://www.jiomart.com/images/product/420x420/492338735/hisense-108-cm-43-inch-ultra-hd-4k-led-smart-tv-43a6ge-digital-o492338735-p590798513-0-202203011350.jpeg",
+      "strikeprice": 44990,
+      "price": 29990,
+      "stock": "In stock",
+      "category": "tv"
+    },
+    {
+      "id": 93,
+      "name": "OnePlus Nord CE 2 Lite 5G,128 GB,6 GB RAM,Blue Tide,Mobile Phone",
+      "image": "https://www.jiomart.com/images/product/420x420/492850035/oneplus-nord-ce-2-lite-5g-128-gb-6-gb-ram-blue-tide-mobile-phone-digital-o492850035-p591224603-0-202204291811.png",
+      "strikeprice": 21999,
+      "price": 19999,
+      "stock": "Out of stock",
+      "category": "mobile"
+    },
+    {
+      "id": 94,
+      "name": "Sony HXR-NX200 Full HD 4K Camcorder",
+      "image": "https://www.jiomart.com/images/product/420x420/491431200/sony-hxr-nx200-full-hd-4k-camcorder-digital-o491431200-p590036392-0-202009260320.jpeg",
+      "strikeprice": 147500,
+      "price": 144990,
+      "stock": "In stock",
+      "category": "camera"
+    },
+    {
+      "id": 95,
+      "name": "Link 52 3 Port Universal Travel Multi Plug",
+      "image": "https://www.jiomart.com/images/product/420x420/491630606/link-52-travel-multi-plug-digital-o491630606-p590441567-0-202108121953.jpeg",
+      "strikeprice": 225,
+      "price": 49,
+      "stock": "In stock",
+      "category": "computers"
+    },
+    {
+      "id": 96,
+      "name": "Hisense 146 cm (58 inch) 3Yr Warranty 4K Ultra HD Android Smart LED TV With Dolby Vision and ATMOS, 58A71F",
+      "image": "https://www.jiomart.com/images/product/420x420/491893295/hisense-146-cm-58-inch-4k-ultra-hd-android-smart-led-tv-with-dolby-vision-and-atmos-58a71f-digital-o491893295-p590442050-0-202203011625.jpeg",
+      "strikeprice": 50990,
+      "price": 42990,
+      "stock": "In stock",
+      "category": "tv"
+    },
+    {
+      "id": 97,
+      "name": "Apple iPhone 12 128 GB, Blue",
+      "image": "https://www.jiomart.com/images/product/420x420/491901536/apple-iphone-12-128-gb-blue-digital-o491901536-p590441370-0-202108121849.jpeg",
+      "strikeprice": 69999,
+      "price": 60000,
+      "stock": "In stock",
+      "category": "mobile"
+    },
+    {
+      "id": 98,
+      "name": "Canon RF 28-70 mm USM Lens",
+      "image": "https://www.jiomart.com/images/product/420x420/491431095/canon-rf-28-70-mm-usm-lens-digital-o491431095-p590036370-0-202009260318.jpeg",
+      "strikeprice": 242995,
+      "price": 236990,
+      "stock": "In stock",
+      "category": "camera"
+    },
+    {
+      "id": 99,
+      "name": "HP 803 Small Ink Cartridge, Black",
+      "image": "https://www.jiomart.com/images/product/420x420/491570864/hp-803-f6v23aa-original-ink-cartridge-black-digital-o491570864-p590035055-0-202206072053.jpeg",
+      "strikeprice": 900,
+      "price": 809,
+      "stock": "Out of stock",
+      "category": "computers"
+    },
+    {
+      "id": 100,
+      "name": "Mi 4C 108 cm (43 inch) Full HD LED Smart Android TV, ELA4668IN",
+      "image": "https://www.jiomart.com/images/product/420x420/492571700/mi-108-cm-43-inch-full-hd-4c-smart-led-tv-ela4668in-digital-o492571700-p590930391-0-202112021506.jpeg",
+      "strikeprice": 29999,
+      "price": 25999,
+      "stock": "In stock",
+      "category": "tv"
+    },
+    {
+      "id": 101,
+      "name": "Maybelline New York Colossal Kajal, Super Black 0.35 gm",
+      "image": "https://www.jiomart.com/images/product/600x600/940610/maybelline-new-york-colossal-kajal-super-black-0-35-gm-prod-940610-0-202112041345.jpg",
+      "strikeprice": 325,
+      "price": 308,
+      "stock": "In stock",
+      "category": "makeup"
+    },
+    {
+      "id": 102,
+      "name": "L'Oreal Paris Fall Resist 3X Anti Hairfall Shampoo 82.5 Ml",
+      "image": "https://www.jiomart.com/images/product/600x600/940215/l-oreal-paris-fall-resist-3x-anti-hairfall-shampoo-82-5-ml-prod-940215-0-202112010457.jpg",
+      "strikeprice": 79,
+      "price": 75,
+      "stock": "In stock",
+      "category": "hair"
+    },
+    {
+      "id": 103,
+      "name": "Lakme 9 To 5 Naturale Aloe Aqua Gel 50 Gm",
+      "image": "https://www.jiomart.com/images/product/600x600/949323/lakme-9-to-5-naturale-aloe-aqua-gel-50-gm-prod-949323-0-202112010252.jpg",
+      "strikeprice": 200,
+      "price": 190,
+      "stock": "In stock",
+      "category": "skin care"
+    },
+    {
+      "id": 104,
+      "name": "Revlon Charlie Crystal Chic Perfumed Body Spray 150 Ml",
+      "image": "https://www.jiomart.com/images/product/600x600/947236/revlon-charlie-crystal-chic-perfumed-body-spray-150-ml-prod-947236-2-202111112228.jpg",
+      "strikeprice": 200,
+      "price": 170,
+      "stock": "In stock",
+      "category": "fragrances"
+    },
+    {
+      "id": 105,
+      "name": "Plum Color Affair Nail Polish Pixie Dust Collection - Fairy Bloom 148 11 ml",
+      "image": "https://www.jiomart.com/images/product/600x600/1023911/plum-color-affair-nail-polish-pixie-dust-collection-fairy-bloom-148-11-ml-prod-1023911-0-202206242033.jpg",
+      "strikeprice": 195,
+      "price": 175,
+      "stock": "In stock",
+      "category": "makeup"
+    },
+    {
+      "id": 106,
+      "name": "L'Oreal Paris Color Protect Conditioner 71.5 Ml",
+      "image": "https://www.jiomart.com/images/product/600x600/940235/l-oreal-paris-color-protect-conditioner-71-5-ml-prod-940235-0-202112010512.jpg",
+      "strikeprice": 109,
+      "price": 103,
+      "stock": "In stock",
+      "category": "hair"
+    },
+    {
+      "id": 107,
+      "name": "The Natural Wash Vitamin C Face Serum For Glowing Youthful & Improved Skin 30 Ml",
+      "image": "https://www.jiomart.com/images/product/600x600/945274/the-natural-wash-vitamin-c-face-serum-for-glowing-youthful-improved-skin-30-ml-prod-945274-0-202111141135.jpg",
+      "strikeprice": 620,
+      "price": 465,
+      "stock": "In stock",
+      "category": "skin care"
+    },
+    {
+      "id": 108,
+      "name": "Maryaj Edp Wild Speed For Him 100 Ml",
+      "image": "https://www.jiomart.com/images/product/600x600/949733/maryaj-edp-wild-speed-for-him-100-ml-prod-949733-0-202112010501.jpg",
+      "strikeprice": 1339,
+      "price": 669,
+      "stock": "In stock",
+      "category": "fragrances"
+    },
+    {
+      "id": 109,
+      "name": "Boujee Beauty Professional Brush Set S109 1's",
+      "image": "https://www.jiomart.com/images/product/600x600/1003072/boujee-beauty-professional-brush-set-s109-1-s-prod-1003072-0-202206241439.jpg",
+      "strikeprice": 9800,
+      "price": 8820,
+      "stock": "In stock",
+      "category": "makeup"
+    },
+    {
+      "id": 110,
+      "name": "Amla Bhringraj & Shikakai For Dry And Damaged Hair 200 Gm",
+      "image": "https://www.jiomart.com/images/product/600x600/945265/the-natural-wash-hair-mask-with-amla-bhringraj-shikakai-for-dry-and-damaged-hair-200-gm-prod-945265-0-202111141134.jpg",
+      "strikeprice": 610,
+      "price": 305,
+      "stock": "In stock",
+      "category": "hair"
+    },
+    {
+      "id": 111,
+      "name": " Vitamin C Serum Concentrate - Kakadu Plum & Acerola Cherry 30 ml",
+      "image": "https://www.jiomart.com/images/product/600x600/925995/dot-key-glow-revealing-vitamin-c-serum-concentrate-kakadu-plum-acerola-cherry-30-ml-prod-925995-0-202112012041.jpg",
+      "strikeprice": 1045,
+      "price": 940,
+      "stock": "In stock",
+      "category": "skin care"
+    },
+    {
+      "id": 112,
+      "name": "Ajmal Nigth Dist Magn Pers Deo 800 ml",
+      "image": "https://www.jiomart.com/images/product/600x600/950975/ajmal-nigth-dist-magn-pers-deo-800-ml-prod-950975-0-202112010632.jpg",
+      "strikeprice": 1196,
+      "price": 479,
+      "stock": "In stock",
+      "category": "fragrances"
+    },
+    {
+      "id": 113,
+      "name": "CAL Losangeles Beauty Blender Sponge Puff 30 gm",
+      "image": "https://www.jiomart.com/images/product/600x600/1008844/cal-losangeles-beauty-blender-sponge-puff-30-gm-prod-1008844-0-202206140127.jpg",
+      "strikeprice": 320,
+      "price": 224,
+      "stock": "In stock",
+      "category": "makeup"
+    },
+    {
+      "id": 114,
+      "name": "Jovees Amla & Beal Hair Tonic 100 ml",
+      "image": "https://www.jiomart.com/images/product/600x600/979646/jovees-amla-beal-hair-tonic-100-ml-prod-979646-0-202206032327.jpg",
+      "strikeprice": 195,
+      "price": 175,
+      "stock": "In stock",
+      "category": "hair"
+    },
+    {
+      "id": 115,
+      "name": "Brillare Multi-Protection Sunscreen SPF 40 50 ml",
+      "image": "https://www.jiomart.com/images/product/600x600/961881/brillare-multi-protection-sunscreen-spf-40-50-ml-prod-961881-0-202111141348.jpg",
+      "strikeprice": 595,
+      "price": 535,
+      "stock": "In stock",
+      "category": "skin care"
+    },
+    {
+      "id": 116,
+      "name": "Ajmal Abia Edp 75 Ml",
+      "image": "https://www.jiomart.com/images/product/600x600/945461/ajmal-abia-edp-75-ml-prod-945461-0-202112010858.jpg",
+      "strikeprice": 5000,
+      "price": 3100,
+      "stock": "In stock",
+      "category": "fragrances"
+    },
+    {
+      "id": 117,
+      "name": "CAL Losangeles SPF 50+ C-03 12 gm",
+      "image": "https://www.jiomart.com/images/product/600x600/1008845/cal-losangeles-spf-50-c-03-12-gm-prod-1008845-0-202206140132.jpg",
+      "strikeprice": 685,
+      "price": 479,
+      "stock": "In stock",
+      "category": "makeup"
+    },
+    {
+      "id": 118,
+      "name": "Miss Claire Lip Balm Conditioner - Strawberry 3.5 Gm",
+      "image": "https://www.jiomart.com/images/product/600x600/948352/miss-claire-lip-balm-conditioner-strawberry-3-5-gm-prod-948352-0-202111121039.jpg",
+      "strikeprice": 95,
+      "price": 76,
+      "stock": "In stock",
+      "category": "hair"
+    },
+    {
+      "id": 119,
+      "name": "Jovees Wrinkle Lift Cream 60 gm",
+      "image": "https://www.jiomart.com/images/product/600x600/1002947/jovees-wrinkle-lift-cream-60-gm-prod-1002947-0-202207181427.jpg",
+      "strikeprice": 225,
+      "price": 191,
+      "stock": "In stock",
+      "category": "skin care"
+    },
+    {
+      "id": 120,
+      "name": "Maryaj Edp Tuxedo For Him 100 Ml",
+      "image": "https://www.jiomart.com/images/product/600x600/949728/maryaj-edp-tuxedo-for-him-100-ml-prod-949728-2-202112010500.jpg",
+      "strikeprice": 1669,
+      "price": 834,
+      "stock": "In stock",
+      "category": "fragrances"
+    },
+    {
+      "name": "Adesh Tayde ",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80",
+      "strikeprice": "1000",
+      "price": "800",
+      "stock": "In Stock",
+      "category": "Electronics",
+      "id": 121
+    }
+  ],
+  "RegisterUser": [
+    {
+      "first_name": "Vipul",
+      "last_name": "Kumar",
+      "email": "vipul.kr.vks@gmail.com",
+      "password": "Vips@2608",
+      "id": 1
+    }
+  ],
+  "checkout": [
+    {
+      "Product": [
+        "Good Life Sugar (M) 1 kg",
+        "Maggi 2-Minute Masala Instant Noodles 560 g",
+        "Amul Fresh Paneer 200 g (Pack)",
+        "Amul Butter 500 g (Carton)"
+      ],
+      "Quantity": [
+        2,
+        2,
+        1,
+        2
+      ],
+      "OrderNO": 965509915,
+      "Address": "Nagpur,Maharashtra",
+      "TotalAmount": 837,
+      "OrderStatus": "Successful",
+      "paydetails": "COD",
+      "id": 2
+    },
+    {
+      "Product": [
+        "Daawat Devaaya Basmati Rice 1 kg"
+      ],
+      "Quantity": [
+        2
+      ],
+      "OrderNO": 580464221,
+      "Address": "Nagpur,Maharashtra",
+      "TotalAmount": 148,
+      "OrderStatus": "Successful",
+      "paydetails": "Prepaid",
+      "id": 3
+    },
+    {
+      "Product": [
+        "Maybelline New York Colossal Kajal, Super Black 0.35 gm"
+      ],
+      "Quantity": [
+        3
+      ],
+      "OrderNO": 172639996,
+      "Address": "Nagpur,Maharashtra",
+      "TotalAmount": 740,
+      "OrderStatus": "Successful",
+      "paydetails": "Prepaid",
+      "id": 5
+    },
+    {
+      "Product": [
+        "Maybelline New York Colossal Kajal, Super Black 0.35 gm",
+        "Good Life Sugar (M) 1 kg",
+        "Daawat Devaaya Basmati Rice 1 kg"
+      ],
+      "Quantity": [
+        1,
+        4,
+        1
+      ],
+      "OrderNO": 164260959,
+      "Address": "Nagpur,Maharashtra",
+      "TotalAmount": 584,
+      "OrderStatus": "Successful",
+      "paydetails": "Prepaid",
+      "id": 6
+    },
+    {
+      "Product": [
+        "Good Life Sugar (M) 1 kg"
+      ],
+      "Quantity": [
+        3
+      ],
+      "OrderNO": 430996223,
+      "Address": "Nagpur,Maharashtra",
+      "TotalAmount": 138,
+      "OrderStatus": "Successful",
+      "paydetails": "Prepaid",
+      "id": 7
+    },
+    {
+      "Product": [
+        "Good Life Sugar (M) 1 kg"
+      ],
+      "Quantity": [
+        8
+      ],
+      "OrderNO": 471896085,
+      "Address": "Nagpur,Maharashtra",
+      "TotalAmount": 368,
+      "OrderStatus": "Successful",
+      "paydetails": "Prepaid",
+      "id": 8
+    },
+    {
+      "Product": [
+        "Women Olive Solid Polyester Dress (M)"
+      ],
+      "Quantity": [
+        2
+      ],
+      "OrderNO": 129445047,
+      "Address": "Nagpur,Maharashtra",
+      "TotalAmount": 998,
+      "OrderStatus": "Successful",
+      "paydetails": "Prepaid",
+      "id": 9
+    }
+  ],
+  "LoginAdmin": [
+    {
+      "email": "admin",
+      "password": "admin",
+      "name": "Adesh"
+    }
+  ]
+}
