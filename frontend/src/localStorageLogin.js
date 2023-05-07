@@ -1,4 +1,5 @@
 window.addEventListener("load",()=>{
+    // let LoggedName = JSON.parse(localStorage.getItem("LoggedName"))
     let LoggedName = JSON.parse(localStorage.getItem("LoggedName"))
     console.log(LoggedName)
     let signedInName = document.getElementById("username")
@@ -6,7 +7,7 @@ window.addEventListener("load",()=>{
     let logout = document.getElementById("logOutBtn")
 
     if(LoggedName === null){
-        window.location.href = "./login.html"
+        // window.location.href = "./login.html"
         // signupBtn.style.display = "inline-block"
         logout.style.display = "none"
     }else{
