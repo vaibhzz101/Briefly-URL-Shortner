@@ -3,7 +3,7 @@
 const shrink_form = document.getElementById("shortener-input");
 const shrink_full_url = document.getElementById("full-url");
 const full_url_btn = document.getElementById("full-url-btn");
-
+const baseUrl = "htt"
 
 // url list elements
 const url_list_box = document.getElementById("url-list-box");
