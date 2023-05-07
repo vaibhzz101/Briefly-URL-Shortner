@@ -8,23 +8,23 @@ signUpButton.addEventListener('click', () => {
 
 signInButton.addEventListener('click', () => {
       container.classList.remove('right-panel-active');
-    });
+});
 
 
     const form = document.getElementById('signup-form');
     const nameInput = document.getElementById('name');
-    const lastnameInput = document.getElementById('lastname');
     const emailInput = document.getElementById('email');
     const mobileInput = document.getElementById('mobile');
     const passwordInput = document.getElementById('password');
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,}$/;
     let previousPasswords = [];
 
+    const bcrypt = require("bcrypt")
+
     // Signup Logic
 
     form.addEventListener('submit', function (event) {
         event.preventDefault();
-
         // Validate password
         console.log(passwordRegex.test(passwordInput.value));
         if (!passwordRegex.test(passwordInput.value)) {
@@ -32,15 +32,14 @@ signInButton.addEventListener('click', () => {
             return;
         }
         let data = {
-            first_name: nameInput.value,
-            last_name : lastnameInput.value,
+            name: nameInput.value,
             email: emailInput.value,
             password: passwordInput.value
         }
         
         // Submit form
         console.log(data)
-        fetch("http://localhost:3000/RegisterUser", {
+        fetch("https://prickly-dove-knickers.cyclic.app/user/signup", {
             method: "post",
             headers: {
                 "Content-Type": "application/json"
@@ -60,7 +59,7 @@ signInButton.addEventListener('click', () => {
 
 
 // Sign In Logic
-
+        const hashedPass = bcrypt.hashSync(signInform[1], 5)
         let signInform = document.getElementById("signin-form")
         let signedInName = document.getElementById("signedIn_Name")
         let signupBtn = document.getElementById("signUpBtn")
@@ -69,14 +68,13 @@ signInButton.addEventListener('click', () => {
             e.preventDefault()
             let data = {
                 email : signInform[0].value,
-                password : signInform[1].value
+                password : hashedPass
             }
             fetchLogin(data)
             // console.log(form[0].value,form[1].value);
         })
          function fetchLogin(dataInput){
-            
-            fetch("http://localhost:3000/RegisterUser")
+            fetch("https://prickly-dove-knickers.cyclic.app/user/allusers")
             .then(res => res.json())
             .then(data=> {
                 let token = false
