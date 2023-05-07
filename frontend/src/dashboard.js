@@ -10,31 +10,50 @@ const url_list_box = document.getElementById("url-list-box");
 
 // making a get request to server for getting user information
 async function getUserInfo() {
-    const url = window.location.href;
-    let userid = url.split("?")[1];
-    let user;
-    if (userid) {
-        user = userid.split("=")[1];
-    }
-    if (user) {
-        localStorage.setItem("user", user);
-        let userId = user;
-        const response = await fetch(`${baseUrl}/short/user/${userId}`);
-        const userInfo = await response.json();
-        // console.log(userInfo);
-        displayStats(userInfo);
-    }
-    else {
-        let userId = localStorage.getItem("user");
-        const response = await fetch(`${baseUrl}/short/user/${userId}`);
-        const userInfo = await response.json();
-        // console.log(userInfo);
-        displayStats(userInfo);
-    }
+    // const url = window.location.href;
+    // let userid = url.split("?")[1];
+    // let user;
+    // if (userid) {
+    //     user = userid.split("=")[1];
+    // }
+    // if (user) {
+    //     localStorage.setItem("user", user);
+    //     let userId = user;
+    //     const response = await fetch(`${baseUrl}/short/user/${userId}`);
+    //     const userInfo = await response.json();
+    //     // console.log(userInfo);
+    //     displayStats(userInfo);
+    // }
+    // else {
+    //     let userId = localStorage.getItem("user");
+    //     const response = await fetch(`${baseUrl}/short/user/${userId}`);
+    //     const userInfo = await response.json();
+    //     // console.log(userInfo);
+    //     displayStats(userInfo);
+    // }
 }
 getUserInfo();
 
-
+url_list_box.innerHTML = userInfo.data.map(element => {
+    return `
+        <div class="url-list" id="url-list">
+            <a target="_blank" class="fullUrl" id="fullUrl" href=${element.full}>${element.full}</a>
+            <hr>
+            <div class="shortUrl-box" id="shortUrl-box">
+                <div>
+                    <a target="_blank" class="shortUrl" id="shortUrl" href=${baseUrl}/short/${element.short}>${baseUrl}/short/${element.short}</a>
+                    <div>
+                        <img id="shortUrl-clipboard" src="../resources/dashboard/url-list/copy.png" alt=${baseUrl}/short/${element.short}>
+                        <img id="shortUrl-delete" src="../resources/dashboard/url-list/delete.png" alt=${element._id}>
+                    </div>
+                </div>
+                <div id=${element._id}>
+                    <p id=${element._id}>${element.clicks}</p>Clicks
+                </div>
+            </div>
+        </div>
+    `
+}).join("")
 // 
 
 // display data
