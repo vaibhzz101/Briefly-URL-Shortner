@@ -6,7 +6,9 @@
 .main{
     margin-top: 100px;
 }
-
+body{
+    background-image: url("../img/bl-ink-home-bg-1-min.png");
+}
 
 .form-box{
     width: 380px;
@@ -70,3 +72,5 @@ span{
 #signin{
     left: 50px;
 }
+
+
