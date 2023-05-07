@@ -25,7 +25,7 @@ userRouter.post("/signup", async (req, res)=>{
         const user = new UserModel({name, email, password: hashedPass})
 
         await user.save()
-        res.send(user);
+        res.send(user); 
         
     } catch (error) {
         res.status(400).send({msg:"Error while registering"}, error)
