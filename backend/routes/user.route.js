@@ -18,11 +18,11 @@ userRouter.get("/allusers", async (req, res)=>{
 
 userRouter.post("/signup", async (req, res)=>{
     try {
-        const {name, email, password}= req.body
+        const {firstname, lastname, email, password}= req.body
         const isUser = await UserModel.findOne({email})
         if (isUser) return res.send({msg: "User already present please login"})
         const hashedPass = bcrypt.hashSync(password, 5)
-        const user = new UserModel({name, email, password: hashedPass})
+        const user = new UserModel({firstname, lastname, email, password: hashedPass})
 
         await user.save()
         res.send(user);
@@ -105,20 +105,20 @@ userRouter.delete("/delete/:id", async(req, res) => {
     }
 })
 
-userRouter.patch("/updateName", async (req, res)=>{
-    const {name, email, password} = req.body
-    try {
-        const data = await UserModel.findOne({ email })
-        if (name) {
-            data.name = name;
-        }
-        await data.save()
+// userRouter.patch("/updateName", async (req, res)=>{
+//     const {fistname, lastname, email, password} = req.body
+//     try {firstn
+//         const data = await UserModel.findOne({ email })
+//         if (firstname) {
+//             data.firstname = name;
+//         }
+//         await data.save()
         
-    } catch (error) {
-        console.log(error)
-        res.json({"msg": "Something wrong"})
-    }
-})
+//     } catch (error) {
+//         console.log(error)
+//         res.json({"msg": "Something wrong"})
+//     }
+// })
 
 userRouter.patch("/updatePassword/:id", async (req, res) => {
     const _id = req.params.id;
