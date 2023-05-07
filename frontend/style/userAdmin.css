@@ -8,7 +8,7 @@ table{
     border-radius: 20px;
     /* margin-left: 40px; */
 }
-th{
+/* th{
     font-size: 22px;
     padding: 10px 4px;
     word-spacing: 5px;
@@ -35,61 +35,67 @@ th{
     cursor: pointer;
     background-color: rgb(255, 50, 91);
     transition: 0.2s;
+} */
+
+tr>td:last-child{
+    background-color: #ffb3005a;
+    border-radius: 5px;
+    
 }
-.frm{
-    width: 28%;
+tr>td:last-child:hover{
+    background-color: #ffb300ab;
+    color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+#filter{
     margin: auto;
-    border-radius: 10px;
-    background-color:rgba(179, 199, 236, 0.771);
-    padding: 30px 20px;
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+    background-color: #ffb3005a;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 8px 5%;
+    border-radius: 5px;
 }
-.frm h1{
-    margin: auto;
-    margin-bottom: 20px;
-    color: rgb(60, 60, 60);
-}
-.frm label{
-    font-weight: 700;
-    color: rgb(60, 60, 60);
+#filter:hover,input[type='submit']:hover{
+    background-color: #ffb300ab;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    border: none;
 }
 form{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px;
+    margin: 50px auto;
+    border-radius: 10px;
+    width: 20%;
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
-form div{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    align-items: center;
+input,label,select{
+    margin: 10px;
+    padding: 5px;
 }
-form input{
-    width: 60%;
-    height: 30px;
-    font-size: 18px;
-    padding-left: 2px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-}
-.submit{
-    width: 50%;
-    margin: auto;
-    margin-top: 20px;
+
+table{
+    margin:50px auto;
+    width: 80%;
     text-align: center;
-    background-color: crimson;
-    color: white;
+}
+th{
+    background-color: rgb(255, 179, 0);
+    padding: 10px;
     border-radius: 5px;
-    border: none;
+    
 }
-.submit:hover{
-    background-color: rgb(235, 71, 104);
-    cursor: pointer;
+tbody>tr:nth-child(even){
+    background-color: rgba(255, 179, 0, 0.169);
 }
-.flex{
-    display: flex;
-    width: 97%;
-    margin: auto;
-    margin-top: 35px;
-    justify-content: space-between;
+tbody>tr:nth-child(odd){
+    background-color: rgba(255, 179, 0, 0.08);
 }
+tbody>tr:nth-child(even):hover{
+    background-color: #ffb3003e;
+}
+

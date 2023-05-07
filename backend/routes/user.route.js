@@ -12,7 +12,7 @@ userRouter.get("/allusers", async (req, res)=>{
         res.json(allUsersData)
     } catch (error) {
         console.log(error)
-        res.status(400).send({"msg": "Erron in getting all users"})
+        res.status(400).send({"msg": "Error in getting all users"})
     }
 })
 
@@ -105,20 +105,20 @@ userRouter.delete("/delete/:id", async(req, res) => {
     }
 })
 
-userRouter.patch("/updateName", async (req, res)=>{
-    const {name, email, password} = req.body
-    try {
-        const data = await UserModel.findOne({ email })
-        if (name) {
-            data.name = name;
-        }
-        await data.save()
+// userRouter.patch("/updateName", async (req, res)=>{
+//     const {fistname, lastname, email, password} = req.body
+//     try {firstn
+//         const data = await UserModel.findOne({ email })
+//         if (firstname) {
+//             data.firstname = name;
+//         }
+//         await data.save()
         
-    } catch (error) {
-        console.log(error)
-        res.json({"msg": "Something wrong"})
-    }
-})
+//     } catch (error) {
+//         console.log(error)
+//         res.json({"msg": "Something wrong"})
+//     }
+// })
 
 userRouter.patch("/updatePassword/:id", async (req, res) => {
     const _id = req.params.id;

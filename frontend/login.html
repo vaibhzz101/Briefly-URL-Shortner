@@ -35,8 +35,13 @@
               <li><a href="#services">Services</a></li>
               <li><a href="#pricing">Pricing</a></li>
               <li><a href="#about">About</a></li>
+<<<<<<< HEAD
               <li><a href="signup.html" class="button signup">📝 Sign Up</a></li>
               <li><a href="login.html" class="button login">👤 Login</a></li>
+=======
+              <li><a href="login.html" class="button signup" >📝 Sign Up</a></li>
+              <li><a href="login.html" class="button login" >👤 Login</a></li>
+>>>>>>> 9749c5c004793a298a1eb7b10875b763053b8000
             </ul>
           </nav>          
         </div>
@@ -45,8 +50,13 @@
     <div class="loginContainer">
         <div class="loginWrapper">
             <div class="container" id="container">
+<<<<<<< HEAD
                 <div class="form-container sign-up-container">
                     <form action="#">
+=======
+                <div class="form-container sign-up-container" >
+                    <form id="signup-form" method="post">
+>>>>>>> 9749c5c004793a298a1eb7b10875b763053b8000
                         <h1 class="h1 createAccount">Create Account</h1>
                         <div class="social-container">
                             <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
@@ -54,6 +64,7 @@
                         </div>
                         
                         <span>or use your email for registration</span>
+<<<<<<< HEAD
                         <input type="text" name="name" placeholder="Name" />
                         <input type="email" name="email" placeholder="Email" />
                         <input type="password" name="password" placeholder="Password" />
@@ -66,18 +77,44 @@
                         <div class="social-container">
                             <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
                             <a href="#" class="social"><i class="fab fa-github"></i></a>
+=======
+                        <input type="text" name="name" placeholder="First Name" id="name"/>
+                        <input type="text" name="name" placeholder="Last Name" id="lastname"/>
+                        <input type="email" name="email" placeholder="Email" id="email" />
+                        <input type="password" name="password" placeholder="Password" id="password"/>
+                        <button type="submit" type="submit">Sign Up</button>
+                        <a href="#" class="ghost" id="signIn">Already Registerd? Sign In Here</a>
+                        
+                    </form>
+                </div>
+                <div class="form-container sign-in-container">
+                    <form method="POST" id="signin-form">
+                        <h1>Sign in</h1>
+                        <div class="social-container">
+                          <div class="social-container">
+                            <a href = "http://localhost:8013/google/auth/google" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href = "https://github.com/login/oauth/authorize?client_id=cefb84d0ab8bbfdc2919&scope=user:email" class="social"><i class="fab fa-github"></i></a>
+                        </div>
+>>>>>>> 9749c5c004793a298a1eb7b10875b763053b8000
                         </div>
                         
                         <span>or use your account</span>
                         <input type="email" name="email" placeholder="Email" />
                         <input type="password" name="password" placeholder="Password" />
                         <a href="#">Forgot your password?</a>
+<<<<<<< HEAD
                         <button>Sign In</button>
+=======
+                        <button type="submit">Sign In</button>
+                        <a href="#" class="ghost" id="signUp">New Here? Sign Up Now</a>
+                        <a href="adminlogin.html">Login As Admin</a>
+>>>>>>> 9749c5c004793a298a1eb7b10875b763053b8000
                     </form>
                 </div>
                 <div class="overlay-container">
                     <div class="overlay">
                         <div class="overlay-panel overlay-left">
+<<<<<<< HEAD
                             <h1>Welcome Back!</h1>
                             <p>Enter your login credentials and start Link Shortening with us</p>
                             <button class="ghost" id="signIn">Sign In</button>
@@ -86,13 +123,73 @@
                             <h1>Hello, Friend!</h1>
                             <p>New User? Create an account and start Link Shortening with us</p>
                             <button class="ghost" id="signUp">Sign Up</button>
+=======
+                            <h1>Hello, Friend!</h1>
+                            <p>New User? Create an account and start Link Shortening with us</p>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1>Welcome Back!</h1>
+                            <p>Enter your login credentials and start Link Shortening with us</p>
+                            <!-- <button class="ghost" id="signUp">Sign Up</button> -->
+>>>>>>> 9749c5c004793a298a1eb7b10875b763053b8000
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+<<<<<<< HEAD
 
+=======
+    <footer id="about" class="footersignup">
+        <div class="footer-wrapper">
+          <div class="footer-content displayNone">
+            <h4>Popular Links</h4>
+            <a href="#"><p>Anatomy of Short Link</p></a>
+            <a href="#"><p>Read Our Reviews</p></a>
+            <a href="#"><p>Watch Our Videos</p></a>
+            <a href="#"><p>Anatomy of Short Link</p></a>
+          </div>
+          <div class="footer-content displayNone">
+            <h4>Product</h4>
+            <a href="#services"><p>Features</p></a>
+            <a href="#pricing"><p>Pricing</p></a>
+            <a href="login.html"><p>Login</p></a>
+            <a href="login.html"><p>Sign Up</p></a>
+            <a href="#"><p>Quote Request</p></a>
+          </div>
+          <div class="footer-content displayNone">
+            <h4>Resources</h4>
+            <a href="#"><p>Api Documentation</p></a>
+            <a href="#"><p>Blog</p></a>
+            <a href="#"><p>Help Center</p></a>
+            <a href="#"><p>Case Studies</p></a>
+            <a href="#"><p>Enterprise Highlights</p></a>
+          </div>
+          <div class="footer-content displayNone">
+            <h4>Company</h4>
+            <a href="#"><p>About</p></a>
+            <a href="#"><p>Career</p></a>
+            <a href="#"><p>Customers</p></a>
+            <a href="#"><p>GDPR</p></a>
+            <a href="#"><p>Contact Us</p></a>
+          </div>
+          <div class="footer-content middle">
+            <h4>Download Our App</h4><br>
+            <div id="download">
+              <a id="playStoreIco" href="#"><img src="img\Daco_172464.png" alt=""></a><br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a id="appStoreIco" href="#"><img src="img\pngwing.com (1).png" alt=""></a>
+            </div>
+            <h4>Contact Us</h4>
+            <a href="#"><u>contactus@brief.ly</u></a>
+          </div>
+        </div>
+      </footer>
+      <div class="lowerFooter">
+        &#169; Briefly | All Rights are Reserved&#174; | Terms And Services &#8482;<br>
+        Made With ❤️ By Masai Students
+      </div>
+>>>>>>> 9749c5c004793a298a1eb7b10875b763053b8000
 
 
 

@@ -13,7 +13,7 @@ const { googlerouter } = require("./login-routes/g-oauthroute")
 const { githubRouter } = require("./login-routes/github.route")
 
 app.use("/url", urlRouter)
-app.use("/g-user", googlerouter)
+app.use("/google", googlerouter)
 app.use("/", githubRouter)
 app.use("/user", userRouter)
 
