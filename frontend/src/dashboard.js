@@ -10,6 +10,8 @@ const url_list_box = document.getElementById("url-list-box");
 
 // making a get request to server for getting user information
 async function getUserInfo() {
+    
+
     // const url = window.location.href;
     // let userid = url.split("?")[1];
     // let user;
