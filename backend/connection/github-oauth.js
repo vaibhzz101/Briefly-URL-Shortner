@@ -5,31 +5,6 @@ const { redisclient } = require("../connection/redis")
 const { UserModel } = require("../models/user.models");
 const { v4: uuidv4 } = require("uuid");
 
-// const express = require("express");
-// const app = express();
-// const session = require('express-session');
-
-// app.use(session({
-//     secret: 'keyboard cat',
-//     resave: false,
-//     saveUninitialized: false,
-//     cookie: {
-//         httpOnly: true,
-//         secure: false,
-//         maxAge: 24 * 60 * 60 * 1000
-//     }
-// }))
-
-// app.use(passport3.initialize());
-// app.use(passport3.session());
-// passport3.serializeUser(function (user, cb) {
-//     cb(null,user.id)
-// })
-// passport3.deserializeUser(function (user, cb) {
-//     cb(null, id)
-// })
-
-
 passport3.use(
     new GitHubStrategy(
         {

@@ -4,6 +4,7 @@ const bcrypt = require("bcrypt")
 const blacklist = require("../models/blacklisting")
 const authenticate = require("../middelwares/authentication")
 const jwt = require("jsonwebtoken")
+const redisclient  = require('../connection/redis') ;
 
 
 userRouter.get("/allusers", async (req, res)=>{
@@ -43,10 +44,14 @@ userRouter.post("/login", async (req, res)=>{
         const normaltoken = jwt.sign({ userId: user._id }, process.env.normalkey, { expiresIn: "1h" });
         const refreshtoken = jwt.sign({ userId: user._id }, process.env.refreshkey, { expiresIn: "6h" });
 
+        res.send({"msg":user.name})
         res.cookie("normaltoken", normaltoken, {maxAge: 1000*60*60})
-        res.cookie("refreshtoken", refreshtoken, {maxAge: 1000*60*60*6})
+        res.cookie("refreshtoken", refreshtoken, { maxAge: 1000 * 60 * 60 * 6 })
+        
+        await redisclient.SET(user.email, JSON.stringify({ token }));
+        res.cookie("email", `${user.email}`);
 
-        res.send({msg: "Login Successful"})
+        res.send({msg: "Login Successful"}).json({token,email,id:user.id});
     } catch (error) {
         console.log(error)
         res.send({msg:"Error while loging in"})

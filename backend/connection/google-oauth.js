@@ -10,16 +10,17 @@ passport.use(
         {
             clientID: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-            callbackURL: "http://localhost:8013/user/auth/google/callback",
+            callbackURL: "http://localhost:8013/google/auth/google/callback",
         },
         async function (accessToken, refreshToken, profile, cb) {
-            await redisclient.SET("tokens", JSON.stringify({ "token": accessToken }));
+            await redisclient.SET("tokens", JSON.stringify({ "token": accessToken ,"username": profile}));
             let email = profile._json.email;
             let udata = await UserModel.findOne({ email });
             if (udata) {
                 return cb(null, udata);
             }
             let name = profile._json.name;
+            
             let N = name.trim().split(" ");
             let logo = N[0][0] + N[N.length - 1][0];
             const user = new UserModel({
@@ -29,6 +30,7 @@ passport.use(
                 password: uuidv4(),
             });
             await user.save();
+            console.log(user)
             return cb(null, user);
         }
     )

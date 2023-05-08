@@ -1,8 +1,8 @@
 const redis = require("redis");
-require("dotenv").config();
-const password=process.env.redis_password
+// require("dotenv").config();
+// const password=process.env.redis_password
 const redisclient = redis.createClient({
-    url: password,
+    url: "redis://default:90t9FyhXUi7KjtuMYMltjMmzxzh1T5XJ@redis-18635.c305.ap-south-1-1.ec2.cloud.redislabs.com:18635",
 });
 try {
     redisclient.connect();
