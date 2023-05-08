@@ -1,4 +1,4 @@
-const baseUrl = "https://localhost:8013/";
+const baseUrl = "https://prickly-dove-knickers.cyclic.app/";
 const userId = localStorage.getItem("user");
 
 // nav elements
@@ -12,6 +12,7 @@ const logout_btn = document.getElementById("nav-logout-btn");
 // overview elements
 const all_links = document.getElementById("all-links");
 const all_clicks = document.getElementById("all-clicks");
+const all_users = document.getElementById("all-users");
 
 // shrink form
 const shrink_form = document.getElementById("shortener-input");
@@ -29,13 +30,14 @@ const url_list_box = document.getElementById("url-list-box");
 //     displayStats(userInfo);
 // }
 // getUserInfo();
-
+countClicks()
 async function fetchUsers() {
  
-        const response = await fetch('http://localhost:8013/user/allusers');
+        const response = await fetch('https://prickly-dove-knickers.cyclic.app/user/allusers');
         const data = await response.json();
-        // console.log(data);
+        console.log(data);
         display(data)
+        all_users.innerText = data.length;
 }
 fetchUsers()
 // navigaiton events
@@ -62,7 +64,7 @@ logout_btn.addEventListener("click", async () => {
 })
 
 
-  all_links.innerText = data.links.length;
+  all_links.innerText = data.length;
 
    let clickCount = 0;
     for (let i = 0; i < data.clicks.length; i++) {
@@ -78,7 +80,7 @@ logout_btn.addEventListener("click", async () => {
 
    async function fetchUsers() {
     try {
-        const response = await fetch('http://localhost:8013/user/allusers');
+        const response = await fetch('https://prickly-dove-knickers.cyclic.app/user/allusers');
         const data = await response.json();
         console.log(data); // Just for debugging purposes
 
@@ -86,7 +88,7 @@ logout_btn.addEventListener("click", async () => {
         url_list_box.innerHTML = data.map(element => {
 
         // Add each user to the table
-       
+       all_users.innerText = data.length;
         return `
         <div class="url-list" id="url-list">
            <p id="client-id" ><strong>Client ID: </strong>${element._id}</p>
@@ -102,7 +104,20 @@ logout_btn.addEventListener("click", async () => {
 }
 fetchUsers();
 
-
+function countClicks(){
+    fetch("https://prickly-dove-knickers.cyclic.app/url/")
+    .then(res=>res.json())
+    .then(res=>{
+        let allClicks = 0;
+        let allinks = res.length;
+        res.forEach(element => {
+            allClicks += Number(element.visited)
+            
+        });
+        all_clicks.innerText = allClicks
+        all_links.innerText = allinks
+    })
+}
 
 
 

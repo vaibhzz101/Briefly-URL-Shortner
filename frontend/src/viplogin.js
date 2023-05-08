@@ -112,6 +112,7 @@ const form = document.getElementById('signup-form');
                     console.log(result);
                     // console.log(data.name);
                     localStorage.setItem("LoggedName",result.name)
+                    localStorage.setItem("LoggedID",result.id)
                     alert("Login Successfull")
                     window.location.href = "./dashboard.html"
                 }

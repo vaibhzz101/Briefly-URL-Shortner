@@ -3,7 +3,9 @@
 const shrink_form = document.getElementById("shortener-input");
 const shrink_full_url = document.getElementById("full-url");
 const full_url_btn = document.getElementById("full-url-btn");
-const baseUrl = "htt"
+const baseUrl = "https://prickly-dove-knickers.cyclic.app"
+const linkCount = document.getElementById('all-links')
+const totalClicks = document.getElementById('all-clicks')
 
 // url list elements
 const url_list_box = document.getElementById("url-list-box");
@@ -19,14 +21,14 @@ async function getUserInfo() {
     if (user) {
         localStorage.setItem("user", user);
         let userId = user;
-        const response = await fetch(`${baseUrl}/short/user/${userId}`);
+        const response = await fetch(`${baseUrl}/user/${userId}`);
         const userInfo = await response.json();
         // console.log(userInfo);
         displayStats(userInfo);
     }
     else {
         let userId = localStorage.getItem("user");
-        const response = await fetch(`${baseUrl}/short/user/${userId}`);
+        const response = await fetch(`${baseUrl}/user/${userId}`);
         const userInfo = await response.json();
         // console.log(userInfo);
         displayStats(userInfo);
@@ -34,30 +36,37 @@ async function getUserInfo() {
 }
 getUserInfo();
 
-
+// displayURLs()
 // 
 
 // display data
 
+const id = localStorage.getItem("LoggedID")
 
 // shrink url
-shrink_form.addEventListener("submit", async (event) => {
+shrink_form.addEventListener("submit",  (event) => {
     full_url_btn.innerHTML = `<i class="fa fa-spinner fa-spin"></i>`;
     event.preventDefault();
-    const full = shrink_full_url.value;
-
-    const request = await fetch(`${baseUrl}/short`, {
+    const longurl = shrink_full_url.value;
+    const request =  fetch(`${baseUrl}/url/assign`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "userId": localStorage.getItem("user")
+            // "userId": localStorage.getItem("user")
         },
-        body: JSON.stringify({ full })
+        body: JSON.stringify({ longurl , id })
     })
-    const response = await request.json();
-    console.log(response);
-    alertWindow("URL shrinked Successfully!!");
+    .then(request => request.json())
+    .then(request=>console.log(request))
+    .catch((err)=> console.log(err))
+
+
+
+    // const response =  request.json();
+    // console.log(response.shorturl);
+    alert("Your URL shrinked Successfully!!");
     full_url_btn.innerHTML = "Shrink";
+    displayURLs()
 })
 
 // alert box
@@ -81,3 +90,43 @@ function alertWindow(msg) {
     box.style.top = "200px";
     document.body.appendChild(box);
 }
+
+function displayURLs(){
+    fetch(`${baseUrl}/url/${id}`)
+    .then(res=>res.json())
+    .then(res=>{
+        url_list_box.innerHTML = res.map(element => {
+            return `
+                <div class="url-list" id="url-list">
+                    <a target="_blank" class="fullUrl" id="fullUrl" href=${element.longurl}>${element.longurl}</a>
+                    <hr>
+                    <div class="shortUrl-box" id="shortUrl-box">
+                        <div>
+                            <a target="_blank" class="shortUrl" id="shortUrl" href=https://briefly.onrender.com/${element.shorturl}>https://briefly.onrender.com/${element.shorturl}</a>
+                            </div>
+                            <div class="pngfixing">
+                                <img id="shortUrl-clipboard" src="./img/copy.png" alt=https://briefly.onrender.com/${element.shorturl}>
+                                <img id="shortUrl-delete" src="./img/delete.png" alt=${element._id}>
+                            </div>
+                        <div id=${element._id}>
+                            <p id=${element._id}>${element.visited}</p>Clicks
+                        </div>
+                    </div>
+                </div>
+            `
+        }).join("")
+    linkCount.innerText = res.length;
+    let sum = 0
+    for(let i=0;i<res.length;i++){
+        sum += parseInt(res[i].visited);
+    }
+    totalClicks.innerText = sum;
+
+    })
+    .catch(err=>console.log(err))
+
+
+}
+
+
+displayURLs()
