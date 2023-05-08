@@ -23,13 +23,21 @@ const full_url_btn = document.getElementById("full-url-btn");
 const url_list_box = document.getElementById("url-list-box");
 
 // making a get request to server for getting user information
-async function getUserInfo() {
-    const response = await fetch(`${baseUrl}/user/allusers`);
-    const userInfo = await response.json();
-    displayStats(userInfo);
-}
-getUserInfo();
+// async function getUserInfo() {
+//     const response = await fetch('http://localhost:8013/user/allusers');
+//     const userInfo = await response.json();
+//     displayStats(userInfo);
+// }
+// getUserInfo();
 
+async function fetchUsers() {
+ 
+        const response = await fetch('http://localhost:8013/user/allusers');
+        const data = await response.json();
+        // console.log(data);
+        display(data)
+}
+fetchUsers()
 // navigaiton events
 url_list_btn.addEventListener("click", () => {
     url_list.style.display = "block";
@@ -54,41 +62,60 @@ logout_btn.addEventListener("click", async () => {
 })
 
 
-  all_links.innerText = userInfo.links.length;
+  all_links.innerText = data.links.length;
 
    let clickCount = 0;
-    for (let i = 0; i < userInfo.clicks.length; i++) {
-      clickCount += userInfo.clicks[i]._id;
+    for (let i = 0; i < data.clicks.length; i++) {
+      clickCount += data.clicks[i]._id;
    }
-     all_clicks.innerText = clickCount;
+      all_clicks.innerText = clickCount;
 
   if (!clickCount) {
-        url_list.style.display = "block";
+       url_list.style.display = "block";
         stats.style.display = "none";
     }
 
 
+   async function fetchUsers() {
+    try {
+        const response = await fetch('http://localhost:8013/user/allusers');
+        const data = await response.json();
+        console.log(data); // Just for debugging purposes
 
-  url_list_box.innerHTML = userInfo.data.map(element => {
-       return `
-            <div class="url-list" id="url-list">
-               <p id="client-id" ><strong>Client ID: </strong>${element._id}</p>
-                <p><strong>Name: </strong>${element.name}</p>
-                <p><strong>Email ID: </strong>${element.email}</p>
-                                 <button id=${element._id} >Client Info</button>
-           </div>
-        `
-   }).join("")
+        // Clear the existing table
+        url_list_box.innerHTML = data.map(element => {
 
-//     const client_btn_arr = document.querySelectorAll("#url-list button");
-//     client_btn_arr.forEach(btn => {
-//         btn.addEventListener("click", (e) => {
-//             const clientID = e.target.id;
-//             localStorage.setItem("clientID", clientID);
-//             window.location.href = "./html/client-page.html";
-//         })
-//     });
-// }
+        // Add each user to the table
+       
+        return `
+        <div class="url-list" id="url-list">
+           <p id="client-id" ><strong>Client ID: </strong>${element._id}</p>
+            <p><strong>Name: </strong>${element.name}</p>
+            <p><strong>Email ID: </strong>${element.email}</p>
+                             <button id=${element._id} >Client Info</button>
+       </div>
+    `
+}).join("")
+    } catch (error) {
+        console.error(error);
+    }
+}
+fetchUsers();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // shrink url
 shrink_form.addEventListener("submit", async (event) => {
