@@ -16,7 +16,45 @@
         <link rel="shortcut icon" href="./img/chain.png" type="image/x-icon">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<style>
+    @media (max-width: 700px) {
+  
 
+    /* overview */
+    .main-overview {
+        /* border: 1px solid blue; */
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .overview-card {
+        width: 90%;
+    }
+
+  
+    /* urls list */
+    .shortUrl-box {
+        flex-direction: column;
+    }
+
+    .url-list-box {
+        width: 93%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1900px){
+
+    .url-list-box {
+        width: 93%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+    }
+}
+</style>
 <body>
 
     <header>
@@ -31,7 +69,6 @@
               <label for="nav-toggle" class="nav-toggle-label">&#9781;</label>
               <ul class="menu">
                 <li> <a href="./useradmin.html"><p class="nav-element" id="nav-urls">Users</p></a></li>
-                <li> <p class="nav-element" id="nav-stats">Stats</p></li>
                 <li><p class="nav-element dropbtn" id="nav-element" onclick="dropdown_menu()">Admin</p></li>
               </ul>
             </nav> 
@@ -79,9 +116,9 @@
         </div>
 
     </main>
-    <footer></footer>
+   
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
 <script src="./src/admin.js"></script>
 
 </html>
