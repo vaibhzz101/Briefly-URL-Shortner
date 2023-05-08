@@ -1,7 +1,9 @@
 window.addEventListener("load",()=>{
-    let LoggedName = JSON.parse(localStorage.getItem("LoggedName"))
+    let LoggedName = localStorage.getItem("LoggedName")
     console.log(LoggedName)
     let signedInName = document.getElementById("username")
+    // signedInName.value = JSON.parse(localStorage.getItem("LoggedName"))
+
     let signupBtn = document.getElementById("signUpBtn")
     let logout = document.getElementById("logOutBtn")
 
@@ -9,16 +11,55 @@ window.addEventListener("load",()=>{
     const room = urlParams.get('name')
     console.log(room);
     
+    if(room!==null){
 
-    if(room === null){
-        window.location.href = "./login.html"
-        // signupBtn.style.display = "inline-block"
-        logout.style.display = "none"
-    }else{
-        signedInName.textContent = `${room}`
+            // signedInName.textContent = `${room}`
+            signedInName.textContent = `${room}`
+            // signupBtn.style.display = "none"
+            logout.style.display = "inline-block"
+    }
+    else if(LoggedName){
+
+        // signedInName.textContent = `${room}`
+        signedInName.textContent = `${LoggedName}`
         // signupBtn.style.display = "none"
         logout.style.display = "inline-block"
     }
+    else{
+        window.location.href = "./login.html"
+        signedInName.textContent = ''
+        // signupBtn.style.display = "inline-block"
+        logout.style.display = "none"
+    }
+
+
+    // if(room === null || LoggedName === null){
+    //     window.location.href = "./login.html"
+    //     // signupBtn.style.display = "inline-block"
+    //     logout.style.display = "none"
+    // }else{
+    //     if(room){
+    //         signedInName.textContent = `${room}`
+    //     // signupBtn.style.display = "none"
+    //     logout.style.display = "inline-block"
+    // }
+    // else if(LoggedName){
+    //         signedInName.textContent = `${LoggedName}`
+    //     // signupBtn.style.display = "none"
+    //     logout.style.display = "inline-block"
+    //     }
+    // }
+    
+    // if(LoggedName===null || room === null){
+    //     // window.location.href = "./login.html"
+    //     // signupBtn.style.display = "inline-block"
+    //     logout.style.display = "none"
+    // }else{
+    //     // signedInName.textContent = `${room}`
+    //     signedInName.textContent = `${LoggedName}`
+    //     // signupBtn.style.display = "none"
+    //     logout.style.display = "inline-block"
+    // }
     
     logout.addEventListener("click", () => {
         // if (signedInName.textContent ===`${room}`) {
@@ -26,13 +67,23 @@ window.addEventListener("load",()=>{
         // }
         room = null;
         localStorage.removeItem("LoggedName")
+        // LoggedName = null;
         signedInName.textContent = "";
         // signupBtn.style.display = "inline-block"
         logout.style.display = "none"
-        window.location.href = "./index.html"
+        logout()
+        window.location.href = "./login.html"
+        // signupBtn.style.display = "inline-block"
+        logout.style.display = "none"
         // alert("You are logged out")
     })
 })
+
+async function logout(){
+    let result = await fetch("https://prickly-dove-knickers.cyclic.app/user/logout")
+    alert(result.msg) 
+    console.log(result.msg) 
+}
 
 
 

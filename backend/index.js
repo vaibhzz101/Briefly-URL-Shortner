@@ -8,7 +8,7 @@ const connection = require("./connection/db")
 const urlRouter = require("./routes/url.route")
 const url = require("./models/urlmodel")
 const userRouter = require("./routes/user.route")
-const { detailUserRoute } = require("./routes/detailroute");
+// const { detailUserRoute } = require("./routes/detailroute");
 const { googlerouter } = require("./login-routes/g-oauthroute")
 const { githubRouter } = require("./login-routes/github.route")
 

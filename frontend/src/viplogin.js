@@ -39,7 +39,7 @@ const form = document.getElementById('signup-form');
         
         // Submit form
         console.log(data)
-        fetch("http://localhost:3000/RegisterUser", {
+        fetch("https://prickly-dove-knickers.cyclic.app/user/signup", {
             method: "post",
             headers: {
                 "Content-Type": "application/json"
@@ -49,10 +49,12 @@ const form = document.getElementById('signup-form');
             .then(response => response.json())
             .then(result => {
                 console.log("success", result)
+                if(result){
+                    alert("Sign Up Successfull")
+                }
             })
             .catch(err => console.log(JSON.stringify(err)))
 
-            alert("Sign Up Successfull")
         });
 
 
@@ -73,25 +75,55 @@ const form = document.getElementById('signup-form');
             fetchLogin(data)
             // console.log(form[0].value,form[1].value);
         })
-         function fetchLogin(dataInput){
+         function fetchLogin(data){
             
-            fetch("http://localhost:3000/RegisterUser")
-            .then(res => res.json())
-            .then(data=> {
-                let token = false
-                for(let i=0;i<data.length;i++){
-                    if(data[i].email === dataInput.email && data[i].password === dataInput.password){
-                        // alert(`Welcome ${data[i].name}`)
-                        token = true;
-                        localStorage.setItem("signedOn",JSON.stringify(data[i]))
-                        let fName = data[i].first_name;
-                        localStorage.setItem("LoggedName",JSON.stringify(fName))
-                        alert("Login Successful")
-                        window.location.href = "./dashboard.html"
-                    }
-                }
+            // fetch("https://prickly-dove-knickers.cyclic.app/user/login")
+            // .then(res => res.json())
+            // .then(data=> {
+            //     // let token = false
+            //     // for(let i=0;i<data.length;i++){
+            //     //     if(data[i].email === dataInput.email && data[i].password === dataInput.password){
+            //     //         // alert(`Welcome ${data[i].name}`)
+            //     //         token = true;
+            //     //         localStorage.setItem("signedOn",JSON.stringify(data[i]))
+            //     //         let fName = data[i].first_name;
+            //     //         localStorage.setItem("LoggedName",JSON.stringify(fName))
+            //     //         alert("Login Successful")
+            //     //         window.location.href = "./dashboard.html"
+            //     //     }
+            //     // }
 
+            //     alert("Login Successful")
+            //     window.location.href = "./dashboard.html"
+
+            // })
+
+            fetch("https://prickly-dove-knickers.cyclic.app/user/login", {
+            method: "post",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        })
+            .then(response => response.json())
+            .then(result => {
+                console.log("success", result)
+                if(result.msg==='Login Successful'){
+                    console.log(result);
+                    // console.log(data.name);
+                    localStorage.setItem("LoggedName",result.name)
+                    alert("Login Successfull")
+                    window.location.href = "./dashboard.html"
+                }
+                else if(result.msg==='User not found'){
+                    alert("User not found")
+                }
+                else{
+                    alert("Wrong Credentials")
+                }
+                
             })
             .catch(err => console.log(err))
-         }
+
+}
         
