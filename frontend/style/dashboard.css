@@ -11,14 +11,14 @@ body {
 
 
 main {
-    /* border: 1px solid black; */
+ 
     width: 100%;
     margin: 100px auto;
 }
 
 /* overview */
 .main-overview {
-    /* border: 1px solid blue; */
+  
     width: 90%;
     display: flex;
     justify-content: space-around;
@@ -30,7 +30,7 @@ main {
 }
 
 .overview-card {
-    border: 1px solid #e9e9e9;
+    border: 1px solid rgba(255, 255, 255, 0.301);;
     width: 45%;
     align-items: flex-start;
     border-radius: 8px;
@@ -40,6 +40,7 @@ main {
     justify-content: flex-start;
     padding: 5px 25px;
     text-align: left;
+    border-image: linear-gradient(to bottom, rgb(0, 255, 17), rgb(120, 72, 33)) 1;
 }
 
 .overview-card:hover {
@@ -50,19 +51,19 @@ main {
 }
 
 .main-overview>:nth-child(1) {
-    background-color: #f8f9fa;
+    background-color: rgba(255, 255, 255, 0.301);
 }
 
 .main-overview>:nth-child(2) {
-    background-color: #f1fdf8;
+    background-color: rgba(255, 255, 255, 0.301);
 }
 
 .main-overview>:nth-child(3) {
-    background-color: #f0f8ff;
+    background-color: rgba(255, 255, 255, 0.301);
 }
 
 .main-overview>:nth-child(4) {
-    background-color: #f7e8e7;
+    background-color: rgba(255, 255, 255, 0.301);
 }
 /* hover */
 .main-overview>:nth-child(1):hover {
@@ -88,7 +89,6 @@ main {
 
 .overview-card p {
     margin: 2%;
-    /* border: 1px solid green; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,21 +96,21 @@ main {
 }
 
 .overview-card span {
-    width: 8%;
+    width: 10%;
 }
 
 .overview-card img {
     width: 90%;
 }
 
-/* shortener */
+/* short */
 .main-shortener-box {
-    width: 100%;
+    width: 95%;
     margin: auto;
 
 }
 
-/* shortener input form */
+/* shortinput form */
 .shortener-input {
     display: flex;
     justify-content: space-between;
@@ -120,7 +120,7 @@ main {
     border-radius: 8px;
     padding: 0px 20px;
     border-radius: 8px;
-    /* background-color: #ffffff; */
+
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -128,9 +128,10 @@ main {
     width: 100%;
     height: 50px;
     border: none;
+    color: #d8d8d8;
     padding: 5px 20px;
     border-radius: 8px;
-    /* background-color: #ffffff; */
+ background-color: #0a0a24;;
 }
 
 .shortener-input>input:focus {
@@ -163,34 +164,34 @@ main {
 
 .url-list {
 
-    width: 90%;
+    width: 82%;
     margin: 20px auto;
-    color: #44546b;
+    color: #ffffff8c;
     border-radius: 8px;
     padding: 20px 20px;
     border-radius: 8px;
-    background-color: #ffffff;
+    background-color: #0a0a2475;;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 ::placeholder{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .url-list>hr{
-    color: #c4cbd6;
-    background-color: #c4cbd6;
-    border: 1px solid #d8d8d8;
+    color: #2ad841;
+    background-color: #00000000;
+    border: 1px solid #ebd7d752;
 }
 
 .url-list a{
     text-decoration: none;
-    color: #5a677a;
+    color: #ffffffb6;
     padding: 10px 0px;
 }
 
 .url-list a:hover{
-    color: #00AEF0;
+    color: #2ad841;
 }
 
 .shortUrl-box {
@@ -218,7 +219,7 @@ main {
     color: #5a677a;
     font-size: 18px;
     border-radius: 50%;
-    background-color: #ffffff;
+
 }
 
 .shortUrl-box>:nth-child(2) p {

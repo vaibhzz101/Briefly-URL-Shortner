@@ -36,10 +36,7 @@ async function getUserInfo() {
 }
 getUserInfo();
 
-// displayURLs()
-// 
 
-// display data
 
 const id = localStorage.getItem("LoggedID")
 
@@ -52,7 +49,7 @@ shrink_form.addEventListener("submit",  (event) => {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            // "userId": localStorage.getItem("user")
+           
         },
         body: JSON.stringify({ longurl , id })
     })
@@ -62,34 +59,14 @@ shrink_form.addEventListener("submit",  (event) => {
 
 
 
-    // const response =  request.json();
-    // console.log(response.shorturl);
+
     alert("Your URL shrinked Successfully!!");
     full_url_btn.innerHTML = "Shrink";
     displayURLs()
 })
 
 // alert box
-function alertWindow(msg) {
-    var box = document.createElement("div");
-    box.className = "prompt-box";
-    var div = document.createElement("div");
-    var ok = document.createElement("button");
-    ok.innerHTML = "OK";
-    ok.onclick = function () {
-        window.location.reload();
-        document.body.removeChild(box);
-    };
-    var text = document.createTextNode(msg);
-    box.appendChild(text);
-    div.appendChild(ok);
-    box.appendChild(div);
 
-    box.style.position = "fixed";
-    box.style.right = "0px"
-    box.style.top = "200px";
-    document.body.appendChild(box);
-}
 
 function displayURLs(){
     fetch(`${baseUrl}/url/${id}`)
