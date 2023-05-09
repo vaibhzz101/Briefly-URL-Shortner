@@ -1,3 +1,4 @@
+
 let tbody = document.getElementById("tbody");
     async function fetchUsers() {
         // try {
@@ -20,6 +21,7 @@ let tbody = document.getElementById("tbody");
                     if (res.ok) {
                         let r = res.json();
 
+
                         alert("delete successfully");
                         window.location.reload();
 
@@ -29,6 +31,8 @@ let tbody = document.getElementById("tbody");
             })
 
   
+
+
     }
 
 fetchUsers();
@@ -48,11 +52,8 @@ function display(data) {
         idCell.innerText = user._id;
         deleteCell.innerText = 'Delete';
 
-        // deleteCell.addEventListener('click', () => {
-        //     deleteUser(user._id);
-        // });
-
         row.append(nameCell, emailCell, idCell, deleteCell);
         tbody.append(row);
     });
 }
+

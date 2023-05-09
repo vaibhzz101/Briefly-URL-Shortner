@@ -23,7 +23,7 @@ googlerouter.get(
 
         // localStorage.setItem("username", JSON.stringify(user.name)),
             // console.log(user)
-        res.redirect(`http://127.0.0.1:5500/frontend/dashboard.html?id=${user._id}&name= ${user.name}`);
+        res.redirect(`http://127.0.0.1:5500/frontend/dashboard.html?id=${user._id}&name=${user.name}`);
     }
 );
 
