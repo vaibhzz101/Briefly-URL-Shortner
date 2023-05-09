@@ -19,7 +19,7 @@ githubRouter.get(
     }),
     function (req, res) {
         let user = req.user;
-        res.redirect(`http://127.0.0.1:5501/frontend/dashboard.html?id=${user._id}&name= ${user.name}`);
+        res.redirect(`http://127.0.0.1:5501/frontend/dashboard.html?id=${user._id}&name=${user.name}`);
 
     }
 );
