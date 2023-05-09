@@ -1,10 +1,10 @@
 tr>td:last-child{
-    background-color: #95b43fbe;
+    background-color:  rgba(255, 255, 255, 0.14);
     border-radius: 5px;
     
 }
 tr>td:last-child:hover{
-    background-color: #ffb300ab;
+    background-color: #020a16;
     color: white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     
@@ -16,19 +16,21 @@ table{
     text-align: center;
 }
 th{
-    background-color: rgb(172, 138, 60);
+    background-color:  #726DB0;
     padding: 10px;
     border-radius: 5px;
     
 }
 tbody>tr:nth-child(even){
-    background-color: rgba(26, 194, 102, 0.169);
+    background-color: rgba(134, 231, 238, 0.24);
     
 }
 tbody>tr:nth-child(odd){
-    background-color: rgba(255, 179, 0, 0.08);
+ 
+    background-color: #020a1677;
+    color: rgba(255, 228, 196, 0.527);
 }
 tbody>tr:nth-child(even):hover{
-    background-color: #ffb3003e;
+    background-color: #1ca5335d;
     color: rgb(201, 171, 171);
 }

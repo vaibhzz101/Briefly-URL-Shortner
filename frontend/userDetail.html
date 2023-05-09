@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets\favico\blink-favicon.ico" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Poppins:wght@700&display=swap"
+        rel="stylesheet" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style\style.css" />
+    <link rel="stylesheet" href="./style/dashboard.css" />
+    <link rel="shortcut icon" href="./img/chain.png" type="image/x-icon">
+    
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@100;200;300;400&family=Roboto:ital,wght@0,100;0,300;1,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>users information</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+          <div class="content-box">
+            <div class="logo">
+                <a href="./index.html"></a>
+                <img src="img\Brief.ly.png" alt="">
+              </a>
+            </div>
+            <nav>
+              <label for="nav-toggle" class="nav-toggle-label">&#9781;</label>
+              <ul class="menu">
+                <li> <a href="./useradmin.html"><p class="nav-element" id="nav-urls">Users</p></a></li>
+                <li> <p class="nav-element" id="nav-stats">Stats</p></li>
+                <li><p class="nav-element dropbtn" id="nav-element" onclick="dropdown_menu()">Admin</p></li>
+              </ul>
+            </nav> 
+            <div class="dropdown">
+                <div class="dropdown-content" id="dropdown-content">
+                    <a href="#" id="nav-logout-btn"><span class="material-symbols-outlined">
+                        logout
+                        </span>Log out</a>
+                </div>         
+          </div>
+        </div>
+      </header>
+    <main>
+        <div class="main-overview" id="main-overview">
+            <div class="overview-card" id="overview-card1">
+                <p>All Urls</p>
+                <p>
+                    <strong id="all-links">0</strong><span><img src="./img/link.png"
+                            alt="" /></span>
+                </p>
+            </div>
+            <div class="overview-card" id="overview-card2">
+                <p>Total Clicks</p>
+                <p>
+                    <strong id="all-clicks">0</strong><span><img src="./img/tap.png"
+                            alt="" /></span>
+                </p>
+            </div>
+
+        </div>
+        <div class="main-shortener-box" id="main-shortener-box">
+            <div class="url-list-box" id="url-list-box">
+              
+            </div>
+        </div>
+     
+    </main>
+    <footer></footer>
+</body>
+
+<script src="../script/client-page.js"></script>
+
+</html>
