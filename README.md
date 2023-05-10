@@ -41,11 +41,12 @@
                                                
 #### Start the server by running `npm run server`.
 ## Usage
-- Once the server is running, you can use the URL shortener by entering a long URL in the input field on the homepage and clicking the "Shorten" button. The application will generate a short URL that you can use to redirect to the original long URL.
+  - To sign in or sign up with Google or GitHub, click the corresponding button on the login page and follow the prompts.
+  - Once the server is running, you can use the URL shortener by entering a long URL in the input field on the dashboard and clicking the "Shrink" button. The application will generate a short URL that you can use to redirect to the original long URL.
 
-- To sign in or sign up with Google or GitHub, click the corresponding button on the login page and follow the prompts.
 
-- To access the admin dashboard, navigate to /admin in your web browser and enter the admin username and password that you specified in the .env file. From the dashboard, you can view a list of all the users and links, delete users, and delete links.
+
+ - To access the admin dashboard, navigate to /admin in your web browser and enter the admin username and password that you specified in the .env file. From the dashboard, you can view a list of all the users and links, delete users, and delete links.
 
 ## API Documentation
 POST ```/url/shorturl```
