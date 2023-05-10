@@ -33,11 +33,11 @@
       MONGODB_URI=<your_mongodb_uri>
       normalkey = <normalkey>
       refreshkey = <refreshkey>
-      redis_password= <redispassword>
-      GITHUB_CLIENT_ID=< GITHUB_CLIENT_ID>
-      GITHUB_CLIENT_SECRET=<GITHUB_CLIENT_SECRET>
-      GOOGLE_CLIENT_ID=<GOOGLE_CLIENT_ID>
-      GOOGLE_CLIENT_SECRET=<GOOGLE_CLIENT_SECRE>
+      redis_password = < redispassword >
+      GITHUB_CLIENT_ID = < github client id>
+      GITHUB_CLIENT_SECRET = <github client secret>
+      GOOGLE_CLIENT_ID = < google client id>
+      GOOGLE_CLIENT_SECRET = <google client secret>
                                                
 #### Start the server by running `npm run server`.
 ## Usage
@@ -78,32 +78,38 @@ Response
 
 - To improve performance and scalability, we are using Redis to cache frequently accessed data and MongoDB to store less frequently accessed data. We can also implement load balancing to handle a large number of requests.
 
-# Admin Dashboard
+## Admin Dashboard
 - #### The admin dashboard provides a way to manage the users and links. From the dashboard, you can:
 - View a list of all the users and links.
 - Delete users.
 - Delete links.
 To access the admin dashboard, navigate to /admin in your web browser and enter the admin username and password that you specified in the .env file.
 
-Credits
-This project was created by [your name here].
+# Screenshots:
+- ## Homepage
+<img src="https://imagetolink.com/ib/0CD0W84znA.png" alt="0CD0W84znA"/>
 
-
-
-## Screenshots:
-- ### Homepage
-<img src="https://imagetolink.com/ib/vlPfm02K35.png" alt="vlPfm02K35"/>
-
-- ### Login
-<img src="https://imagetolink.com/ib/yFkOTIrpwR.png" alt="yFkOTIrpwR"/>
+- ## Login
+<img src="https://imagetolink.com/ib/HUjc64bdAg.png" alt="HUjc64bdAg"/>
   
-- ### Register
+- ## Register
+<img src="https://imagetolink.com/ib/p80Gpu8j2p.png" alt="p80Gpu8j2p"/>
+  
+- ## Client Dashboard
+<img src="https://imagetolink.com/ib/FMBNFAMZww.png" alt="FMBNFAMZww"/>
+  
+- ## Admin
+  
+- - ### Admin Login
+  <img src="https://imagetolink.com/ib/T5nxxX8VWE.png" alt="T5nxxX8VWE"/>
+  
+- - ### Admin Dashboard
+  <img src="https://imagetolink.com/ib/QmklPB6gkw.png" alt="QmklPB6gkw"/>
+  
+- - ### User Manager
+  <img src="https://imagetolink.com/ib/k5KMNKA2kj.png" alt="k5KMNKA2kj"/>
 
-- ### Client Dashboard
-
-- ### Admin Dashboard
-
-- ## Authors
+- # Authors
 
 - Vaibhav Shevne :  [Linkedin](https://www.linkedin.com/in/vaibhav-shevne-1b1935170/) - [Github](https://github.com/vaibhzz101/)
 - Vipul Kumar :  [Linkedin](https://www.linkedin.com/in/vipul-kumar-931a021b8) - [Github](https://github.com/vaibhzz101/)
