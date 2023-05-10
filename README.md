@@ -102,5 +102,12 @@ This project was created by [your name here].
 
 - ### Admin Dashboard
 
+- ## Authors
+
+- Vaibhav Shevne :  [Linkedin](https://www.linkedin.com/in/vaibhav-shevne-1b1935170/) - [Github](https://github.com/vaibhzz101/)
+- Vipul Kumar :  [Linkedin](https://www.linkedin.com/in/vipul-kumar-931a021b8) - [Github](https://github.com/vaibhzz101/)
+- Akash Manwar :  [Linkedin](https://www.linkedin.com/in/akash-manwar-574277248/) - [Github](https://github.com/AkashManwar2506)
+- Saloni Kumari :  [Linkedin](https://www.linkedin.com/in/saloni0021/) - [Github](https://github.com/Saloni0282)
+- Rohit Kumar :  [Linkedin](https://www.linkedin.com/in/rohit-kumar824/) - [Github](https://github.com/rohitsingh1816/)
 
 
