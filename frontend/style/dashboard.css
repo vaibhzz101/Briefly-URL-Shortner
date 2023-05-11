@@ -225,8 +225,7 @@ main {
 .shortUrl-box>:nth-child(2) p {
     color: #ffffff;
     border-radius: 8px;
-    border: 1px solid #ffffff;
-    background-color: #00AEF0;
+
     padding: 10px;
 }
 

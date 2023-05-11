@@ -18,7 +18,7 @@ const shrink_full_url = document.getElementById("full-url");
 const search_category = document.getElementById("search-options");
 const full_url_btn = document.getElementById("full-url-btn");
 
-// url list elements
+// url list elements 
 const url_list_box = document.getElementById("url-list-box");
 
 countClicks()
@@ -66,22 +66,44 @@ logout_btn.addEventListener("click", async () => {
         const response = await fetch('https://prickly-dove-knickers.cyclic.app/user/allusers');
         const data = await response.json();
         console.log(data); 
+        displayData(data)
       
-        url_list_box.innerHTML = data.map(element => {
+      
+    } catch (error) {
+        console.error(error);
+    }
+ 
+   
+}
+
+function displayData(data){ 
+    url_list_box.innerHTML = data.map(element => {
        all_users.innerText = data.length;
         return `
         <div class="url-list" id="url-list">
            <p id="client-id" ><strong>UserID: </strong>${element._id}</p>
-            <p><strong>Name: </strong>${element.name}</p>
+            <p id ="username"><strong>Name: </strong>${element.name}</p>
             <p><strong>Email : </strong>${element.email}</p>
-           <button> <a href="./useradmin.html" id=${element._id} ">user info </a></button>
+           <button  id=${element._id} >user info </button>
        </div>
     `
-    render(data) 
+
 }).join("")
-    } catch (error) {
-        console.error(error);
-    }
+
+   const client_btn = document.querySelectorAll("#url-list button");
+   client_btn.forEach(btn => {
+       btn.addEventListener("click", (e) => {
+           const clientID = e.target.id;
+           console.log(e.target.id)
+           localStorage.setItem("clientID", clientID);
+           const userName = e.target.name;
+           console.log(e.target.name)
+           localStorage.setItem("username", userName)
+        
+      
+           window.location.href = "./userDetail.html";
+       })
+   });
 
 }
 

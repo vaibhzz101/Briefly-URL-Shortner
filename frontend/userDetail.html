@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Poppins:wght@700&display=swap"
         rel="stylesheet" />
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./style\style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+
     <link rel="stylesheet" href="./style/dashboard.css" />
     <link rel="shortcut icon" href="./img/chain.png" type="image/x-icon">
     
@@ -24,6 +25,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <title>users information</title>
+    <style>
+        .dropdown {
+    position: fixed;
+    top: 10px;
+    right: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #131414;
+    width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 50px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: width 2s ease-in-out 1s;
+}
+
+.dropdown-content a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    gap: 10px;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content>hr {
+    height: 1px;
+    background-color: #ffffff;
+    border: none;
+    width: 90%;
+    margin: auto;
+}
+
+    </style>
 </head>
 
 <body>
@@ -38,8 +85,8 @@
             <nav>
               <label for="nav-toggle" class="nav-toggle-label">&#9781;</label>
               <ul class="menu">
+                <li> <a href="./admin.html"><p class="nav-element" id="nav-urls">Dashboard</p></a></li>
                 <li> <a href="./useradmin.html"><p class="nav-element" id="nav-urls">Users</p></a></li>
-                <li> <p class="nav-element" id="nav-stats">Stats</p></li>
                 <li><p class="nav-element dropbtn" id="nav-element" onclick="dropdown_menu()">Admin</p></li>
               </ul>
             </nav> 
@@ -53,6 +100,9 @@
         </div>
       </header>
     <main>
+        <div>
+            <h2 id="username"></h2>
+        </div>
         <div class="main-overview" id="main-overview">
             <div class="overview-card" id="overview-card1">
                 <p>All Urls</p>
@@ -80,6 +130,6 @@
     <footer></footer>
 </body>
 
-<script src="../script/client-page.js"></script>
+<script src="./src/users-info.js"></script>
 
 </html>
