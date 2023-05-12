@@ -22,6 +22,9 @@
 ## Backend Deployed Link
 - Server Side: [https://beige-swordfish-wear.cyclic.app/](https://beige-swordfish-wear.cyclic.app/)
 
+# User Flow Chart 
+<img src="https://imagetolink.com/ib/hFyN6nFxCY.png" alt="hFyN6nFxCY"/>
+
 ## Installation
  ### To install this project, follow these steps:
 
