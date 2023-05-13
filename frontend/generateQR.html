@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Generate a QR code image to point to a website URL"
+    />
+    <meta
+      name="keywords"
+      content="qr code, qr codes, qrcodes, create qr code, qr code generator, create qrcodes, make a qr code, online qr code"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="assets\favico\blink-favicon.ico" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Poppins:wght@700&display=swap"
+        rel="stylesheet" />
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style\style.css" />
+    <link rel="stylesheet" href="./style/dashboard.css" />
+    <link rel="shortcut icon" href="./img/chain.png" type="image/x-icon">
+    
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@100;200;300;400&family=Roboto:ital,wght@0,100;0,300;1,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      #generated img{
+        margin: 15px;
+      }
+    </style>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/script.js" defer></script>
+    <style>
+      #spinner {
+        display: none;
+      }
+      main{
+        color: white;
+      }
+    </style>
+    <title>Free Online QR Code Generator</title>
+  </head>
+  <body>
+    <!-- <header class="p-4 mb-10 bg-red-500">
+      <div class="max-w-5xl m-auto">
+        <div class="text-xl font-bold text-white">QR Code Generator</div>
+      </div>
+    </header> -->
+    <header>
+      <div class="wrapper">
+          <div class="content-box">
+              <div class="logo">
+                  <a href="./dashboard.html"><img src="img\Brief.ly.png" alt="" /></a>
+              </div>
+              <nav>
+      
+                  <!-- <label for="nav-toggle" class="nav-toggle-label">&#9781;</label> -->
+
+                  <ul class="menu">
+                    <li><a href="./dashboard.html">Link Shortner</a></li>
+                    <li><a href="./generateQR.html">Link To QR</a></li>
+                    <li><a href="./QRify-main/qrcode.html">UPI To QR</a></li>
+                      <li>
+                      </li>
+                  </ul>
+                  <div class="usernamelogout">
+                      <a href="" class="button signup1">👤Welcome, <span
+                          id="username"></span></a>
+                          <a id="logOutBtn" href="login.html"><span class="button signup1" class="material-symbols-outlined">logout</span></a>
+                  </div>
+              </nav>
+          </div>
+      </div>
+  </header>
+    <img src="img/spinner.svg" alt="" />
+    <main>
+      <div
+        class="flex flex-col-reverse align-center justify-center m-auto md:max-w-4xl p-10 md:flex-row"
+      >
+        <div class="w-full md:w-2/3 mr-24">
+          <h1 class="text-3xl font-bold mb-5 md:text-4xl">QR Code Generator</h1>
+          <p class="mb-4">
+            QR Codes allow smartphone users to access your website simply and
+            quickly.
+          </p>
+          <p>
+            Enter your URL below to generate a QR Code and download the image.
+          </p>
+
+          <form id="generate-form" class="mt-4">
+            <input
+              id="url"
+              type="url"
+              placeholder="Enter a URL"
+              class="w-full border-2 border-gray-200 rounded p-3 text-black mr-2 focus:outline-none mb-5"
+              required
+            />
+
+            <select
+              class="w-full border-2 border-gray-200 rounded p-3 text-black mr-2 focus:outline-none"
+              name="size"
+              id="size"
+            >
+              <option value="100">100x100</option>
+              <option value="200">200x200</option>
+              <option value="300" selected>300x300</option>
+              <option value="400">400x400</option>
+              <option value="500">500x500</option>
+              <option value="600">600x600</option>
+              <option value="700">700x700</option>
+            </select>
+            <button
+              class="bg-gray-600 rounded w-full text-white py-3 px-4 mt-5 hover:bg-black"
+              type="submit"
+            >
+              Generate QR Code
+            </button>
+          </form>
+        </div>
+        <div class="w-full md:w-1/3 self-center">
+          <img
+            class="w-1/2 m-auto mb-10 md:w-full"
+            src="img/qr-code.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      
+      <div
+        id="generated"
+        class="max-w-5xl m-auto flex flex-col text-center align-center justify-center mt-20"
+      >
+        <!-- Spinner -->
+        <div id="spinner" role="status">
+          <svg
+            class="inline mr-2 w-24 h-24 text-gray-200 animate-spin dark:text-gray-600 fill-pink-600"
+            viewBox="0 0 100 101"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+              fill="currentColor"
+            />
+            <path
+              d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+              fill="currentFill"
+            />
+          </svg>
+          <span class="sr-only">Loading...</span>
+        </div>
+
+        <div id="qrcode" class="m-auto"></div>
+      </div>
+    </main>
+    <footer id="about" class="footersignup">
+      <div class="footer-wrapper">
+        <div class="footer-content displayNone">
+          <h4>Popular Links</h4>
+          <a href="#"><p>Anatomy of Short Link</p></a>
+          <a href="#"><p>Read Our Reviews</p></a>
+          <a href="#"><p>Watch Our Videos</p></a>
+          <a href="#"><p>Anatomy of Short Link</p></a>
+        </div>
+        <div class="footer-content displayNone">
+          <h4>Product</h4>
+          <a href="#services"><p>Features</p></a>
+          <a href="#pricing"><p>Pricing</p></a>
+          <a href="login.html"><p>Login</p></a>
+          <a href="login.html"><p>Sign Up</p></a>
+          <a href="#"><p>Quote Request</p></a>
+        </div>
+        <div class="footer-content displayNone">
+          <h4>Resources</h4>
+          <a href="#"><p>Api Documentation</p></a>
+          <a href="#"><p>Blog</p></a>
+          <a href="#"><p>Help Center</p></a>
+          <a href="#"><p>Case Studies</p></a>
+          <a href="#"><p>Enterprise Highlights</p></a>
+        </div>
+        <div class="footer-content displayNone">
+          <h4>Company</h4>
+          <a href="#"><p>About</p></a>
+          <a href="#"><p>Career</p></a>
+          <a href="#"><p>Customers</p></a>
+          <a href="#"><p>GDPR</p></a>
+          <a href="#"><p>Contact Us</p></a>
+        </div>
+        <div class="footer-content middle">
+          <h4>Download Our App</h4><br>
+          <div id="download">
+            <a id="playStoreIco" href="#"><img src="img\Daco_172464.png" alt=""></a><br>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a id="appStoreIco" href="#"><img src="img\pngwing.com (1).png" alt=""></a>
+          </div>
+          <h4>Contact Us</h4>
+          <a href="#"><u>contactus@brief.ly</u></a>
+        </div>
+      </div>
+    </footer>
+    <div class="lowerFooter" style="color: white;">
+      &#169; Briefly | All Rights are Reserved&#174; | Terms And Services &#8482;<br>
+      Made With ❤️ By Masai Students
+    </div>
+
+  </body>
+
+  <script src="src\username.js"></script>
+  <script src="src\dashboard.js"></script>
+</html>

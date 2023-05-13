@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Generate a QR code image to point to a website URL"
+    />
+    <meta
+      name="keywords"
+      content="qr code, qr codes, qrcodes, create qr code, qr code generator, create qrcodes, make a qr code, online qr code"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="assets\favico\blink-favicon.ico" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Poppins:wght@700&display=swap"
+        rel="stylesheet" />
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/chain.png" type="image/x-icon">
+    
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@100;200;300;400&family=Roboto:ital,wght@0,100;0,300;1,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/script.js" defer></script>
+    <style>
+      #spinner {
+        display: none;
+      }
+      main{
+        color: white;
+      }
+    </style>
+    <title>Free Online QR Code Generator</title>
+  </head>
+  <body>
+    <!-- <header class="p-4 mb-10 bg-red-500">
+      <div class="max-w-5xl m-auto">
+        <div class="text-xl font-bold text-white">QR Code Generator</div>
+      </div>
+    </header> -->
+    <header>
+      <div class="wrapper">
+          <div class="content-box">
+              <div class="logo">
+                  <a href="../dashboard.html"><img src="img\Brief.ly.png" alt="" /></a>
+              </div>
+              <nav>
+      
+                  <!-- <label for="nav-toggle" class="nav-toggle-label">&#9781;</label> -->
+
+                  <ul class="menu">
+					<li><a href="../dashboard.html">Link Shortner</a></li>
+					<li><a href="../generateQR.html">Link To QR</a></li>
+					<li><a href="./QRify-main/qrcode.html">UPI To QR</a></li>
+                      <li>
+                      </li>
+                  </ul>
+                  <div class="usernamelogout">
+                      <a href="" class="button signup1">👤Welcome, <span
+                          id="username"></span></a>
+                          <a id="logOutBtn" href="../login.html"><span class="button signup1" class="material-symbols-outlined">logout</span></a>
+                  </div>
+              </nav>
+          </div>
+      </div>
+  </header>
+
+	<article>
+
+		<div class="container content">
+			<div class="row">
+				<div class="col-md-12">
+
+
+					<div class="inputs">
+						<div class="row">
+							<div >
+								<form>
+									<div class="form-group">
+										<label for="pn">Enter your name</label>
+										<div class="input-group">
+											<input class="form-control" id="pn" placeholder="Your name" value="Vipul Kumar"/>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="pa">Enter your VPA</label>
+										<div class="input-group">
+											<input class="form-control" id="pa" aria-label="Your VPA identifier" placeholder="Your VPA identifier" value="vipul.kr.vks"/>
+											<span class="input-group-addon">@</span>
+											<input class="form-control" id="psp" list="psplist" aria-label="Your VPA handle" placeholder="Your VPA handle" value="ybl"/>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="am">Enter Amount</label>
+										<div class="input-group">
+											<input class="form-control" id="am" placeholder="Enter The Amount" value = "500" />
+										</div>
+									</div>
+									<datalist id="psplist">
+										<option value="allbank">
+										</option><option value="andb">
+										</option><option value="axisbank">
+										</option><option value="barodampay">
+										</option><option value="centralbank">
+										</option><option value="cnrb">
+										</option><option value="csbpay">
+										</option><option value="dcb">
+										</option><option value="denabank">
+										</option><option value="federal">
+										</option><option value="hdfcbank">
+										</option><option value="hsbc">
+										</option><option value="icici">
+										</option><option value="idfcbank">
+										</option><option value="idbi">
+										</option><option value="indianbank">
+										</option><option value="indus">
+										</option><option value="kaypay">
+										</option><option value="kbl">
+										</option><option value="kvb">
+										</option><option value="mahab">
+										</option><option value="obc">
+										</option><option value="pnb">
+										</option><option value="pockets">
+										</option><option value="rbl">
+										</option><option value="sbi">
+										</option><option value="sib">
+										</option><option value="syndicate">
+										</option><option value="tjsb">
+										</option><option value="ubi">
+										</option><option value="uboi">
+										</option><option value="uco">
+										</option><option value="utbi">
+										</option><option value="united">
+										</option><option value="unionbank">
+										</option><option value="upi">
+										</option><option value="vijb">
+										</option><option value="ybl">
+										</option><option value="yesbank">
+										</option>
+									</datalist>
+									<div>
+									<a class="btn btn-primary" onclick="generatePhoneQRCode()" id="createupiqr"><i class="fa fa-qrcode"></i> <span>Create QRCode</span></a></div>
+									<p>&nbsp;</p>
+								</form>
+							</div>
+							<div >
+								<div id="printableArea" class="printableArea">
+									<div id="payQRCode"></div>
+									<div id="printVPA"></div>
+								</div>
+								<img src="img/UPILogo.jpg" id="upilogo" hidden="true"/>
+							</div>
+							<div class="downloadclass">
+								<p><a class="btn btn-primary" style="display:none" id="DownloadQRCode" onclick="downloadQRCode()"><i class="fa fa-download"></i> <span>Download QRCode</span></a></p>
+								<p><a class="btn btn-primary" style="display:none" id="PrintQRCode" onclick="printQRCode()"><i class="fa fa-print"></i> <span>Print QRCode</span></a></p>
+								<p><a class="btn btn-primary" style="display:none" id="paylink" href=""><i class="fa fa-money"></i> <span></span></a></p>
+								<p><img src="img/UPILogo.jpg" id="upifulllogo" width="50%" height="30%" hidden="true"/></p>
+							</div>
+						</div>
+						<hr/>
+					</div>
+
+				</div>
+			</div>
+			<center><div id="sharesocial"/></center>
+		</div> <!-- end .container -->
+	</article>
+    <footer id="about" class="footersignup">
+        <div class="footer-wrapper">
+          <div class="footer-content displayNone">
+            <h4>Popular Links</h4>
+            <a href="#"><p>Anatomy of Short Link</p></a>
+            <a href="#"><p>Read Our Reviews</p></a>
+            <a href="#"><p>Watch Our Videos</p></a>
+            <a href="#"><p>Anatomy of Short Link</p></a>
+          </div>
+          <div class="footer-content displayNone">
+            <h4>Product</h4>
+            <a href="#services"><p>Features</p></a>
+            <a href="#pricing"><p>Pricing</p></a>
+            <a href="login.html"><p>Login</p></a>
+            <a href="login.html"><p>Sign Up</p></a>
+            <a href="#"><p>Quote Request</p></a>
+          </div>
+          <div class="footer-content displayNone">
+            <h4>Resources</h4>
+            <a href="#"><p>Api Documentation</p></a>
+            <a href="#"><p>Blog</p></a>
+            <a href="#"><p>Help Center</p></a>
+            <a href="#"><p>Case Studies</p></a>
+            <a href="#"><p>Enterprise Highlights</p></a>
+          </div>
+          <div class="footer-content displayNone">
+            <h4>Company</h4>
+            <a href="#"><p>About</p></a>
+            <a href="#"><p>Career</p></a>
+            <a href="#"><p>Customers</p></a>
+            <a href="#"><p>GDPR</p></a>
+            <a href="#"><p>Contact Us</p></a>
+          </div>
+          <div class="footer-content middle">
+            <h4>Download Our App</h4><br>
+            <div id="download">
+              <a id="playStoreIco" href="#"><img src="img\Daco_172464.png" alt=""></a><br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a id="appStoreIco" href="#"><img src="img\pngwing.com (1).png" alt=""></a>
+            </div>
+            <h4>Contact Us</h4>
+            <a href="#"><u>contactus@brief.ly</u></a>
+          </div>
+        </div>
+      </footer>
+      <div class="lowerFooter">
+        &#169; Briefly | All Rights are Reserved&#174; | Terms And Services &#8482;<br>
+        Made With ❤️ By Masai Students
+      </div>
+
+
+
+<!-- End Document –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.3.1/jssocials.min.js"></script>
+	<script>
+		$("#sharesocial").jsSocials({
+			url: "https://QRify.github.io/QRify/qrcode.html",
+			text: "Create your #UPI QRCode now",
+			showCount: "inside",
+			showLabel: false,
+			shareIn: "popup",
+			shares: ["email", "twitter", "facebook", "whatsapp", "googleplus"]
+		});
+	</script>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lrsjng.jquery-qrcode/0.14.0/jquery-qrcode.min.js"></script>
+
+	<script src="./src/jquery.i18n.js"></script>
+	<script src="./src/jquery.i18n.messagestore.js"></script>
+	<script src="./src/jquery.i18n.fallbacks.js"></script>
+	<script src="./src/jquery.i18n.parser.js"></script>
+	<script src="./src/jquery.i18n.emitter.js"></script>
+	<script src="./src/jquery.i18n.language.js"></script>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-url/2.3.1/url.min.js"></script>
+	<script src="js/helper.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/l10n.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-83520638-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	  <script>
+		document.getElementById('createupiqr').addEventListener("click",(event)=>{
+      event.preventDefault();
+      swal({
+        title: "QR Code Generated!! ✅",
+        text: "You can now Download Your QR Code!!",
+        icon: "success",
+        button: "Yay!🎉",
+      })
+    })
+	</script>
+	  <script src="/src/dashboard.js"></script>
+	  <script src="/src/username.js"></script>
+	</body>
+</html>

@@ -33,5 +33,4 @@ tbody>tr:nth-child(odd){
 tbody>tr:nth-child(even):hover{
     background-color: #1ca5335d;
     color: rgb(201, 171, 171);
-
 }

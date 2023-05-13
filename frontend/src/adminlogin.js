@@ -21,11 +21,27 @@ form.addEventListener("submit", (e) => {
     data.forEach((ele) => {
       if (ele.email == email1 && ele.pass == pass1) {
         localStorage.setItem("e", email1)
-        alert("Welcome Back Admin !");
-        self.location = "./admin.html"
+        // alert("Welcome Back Admin !");
+        // self.location = "./admin.html"
+        swal({
+          title: "Login Successful!",
+          text: "Welcome Back! Admin ✅",
+          icon: "success",
+          button: "Yay!🎉",
+        }).then((value) => {
+          if (value) {
+            window.location.href = "./admin.html";
+          }
+        });
       }
       else{
-        alert("you are not an admin !");
+        // alert("you are not an admin !");
+        swal({
+          title: "Login Failed! ❌",
+          text: "Enter Credentials Again",
+          icon: "success",
+          button: "Ok",
+        })
            
       }
     })
