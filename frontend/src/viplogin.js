@@ -50,7 +50,8 @@ const form = document.getElementById('signup-form');
             .then(result => {
                 console.log("success", result)
                 if(result){
-                    alert("Sign Up Successfull")
+                    swal("Sign Up Successful!", "Now You've an Account with us! Yayy 😊👏", "success");
+                    // alert("Sign Up Successfull")
                 }
             })
             .catch(err => console.log(JSON.stringify(err)))
@@ -113,14 +114,28 @@ const form = document.getElementById('signup-form');
                     // console.log(data.name);
                     localStorage.setItem("LoggedName",result.name)
                     localStorage.setItem("LoggedID",result.id)
-                    alert("Login Successfull")
-                    window.location.href = "./dashboard.html"
+                    // swal("Login Successful!", "You can now access our services!", "success");
+                    swal({
+                        title: "Login Successful!",
+                        text: "You can now access our services!",
+                        icon: "success",
+                        button: "Yay!🎉",
+                      }).then((value) => {
+                        if (value) {
+                          window.location.href = "./dashboard.html";
+                        }
+                      });
+                      
+                    // alert("Login Successfull")
+                    // window.location.href = "./dashboard.html"
                 }
                 else if(result.msg==='User not found'){
-                    alert("User not found")
+                    // alert("User not found")
+                    swal("Failed! User Not Found ❌", "Go To Sign Up And Create New Account! 🥺🙏", "error");
                 }
                 else{
-                    alert("Wrong Credentials")
+                    swal("Failed! Wrong Password ❌", "Don't be in hurry! Type your Password Correctly 🙏", "error");
+                    // alert("Wrong Credentials")
                 }
                 
             })

@@ -71,7 +71,13 @@ function displayStats(userInfo) {
     copy_btn.forEach(btn => {
         btn.addEventListener('click', (e) => {
             navigator.clipboard.writeText(e.target.alt);
-            alert("Link copied to clipboard")
+            // alert("Link copied to clipboard")
+            swal({
+                title: "Copied To Clipboard!",
+                text: "You can now Paste🗒️ the Link Anywhere!",
+                icon: "success",
+                button: "Yay!🎉",
+              })
         })
     });
 
@@ -83,9 +89,17 @@ function displayStats(userInfo) {
                 .then(res => {
                     console.log(res)
                     if (res.msg == "URL Deleted") {
-                        alert("URL has been deleted")
+                        // alert("URL has been deleted")
+                        swal({
+                            title: "Link Deleted Successfull!",
+                            icon: "success"
+                          }).then((value) => {
+                            if (value) {
+                              location.reload()
+                            }
+                          });
                         // displayStats(userInfo)
-                     location.reload()
+                    //  location.reload()
                     }
                 })
             

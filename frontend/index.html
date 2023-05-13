@@ -6,8 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets\favico\blink-favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+  .dropdown {
+  color: white;;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown span {
+  color: white;;
+  cursor: pointer;
+}
+
+.dropdown .dropdown-menu {
+  display: none;
+  color: white;;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #2D365C;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.dropdown .dropdown-menu li a {
+  display: block;
+  color: white;;
+  padding: 10px;
+  text-decoration: none;
+}
+
+
+.dropdown .dropdown-menu li a:hover {
+  background-color: #2D365C;
+}
+
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+</style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Poppins:wght@700&display=swap" rel="stylesheet">
@@ -27,7 +71,18 @@
           <nav>
             <!-- <div class="logo">Logo</div> -->
             <!-- <input type="checkbox" id="nav-toggle"> -->
-            <label for="nav-toggle" class="nav-toggle-label">&#9781;</label>
+            <!-- <label for="nav-toggle" class="nav-toggle-label">&#9781;</label> -->
+            <div class="dropdown">
+              <span class="mobilemenu">&#9776;</span>
+              <ul class="dropdown-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="login.html">Sign In</a></li>
+              </ul>
+            </div>
+            
             <ul class="menu">
               <li><a href="index.html">Home</a></li>
               <li><a href="#services">Services</a></li>
@@ -80,7 +135,7 @@
               <div class="features2">
                 <div class="featuresBox">
                   <img src="img\QRCODE2X.png" alt="">
-                <p>Branded Links</p>
+                <p>QR Codes</p>
                 </div>
               </div>
               <div class="features3">
@@ -246,4 +301,13 @@
       Made With ❤️ By Masai Students
     </div>
 </body>
+<script>
+  const dropdown = document.querySelector('.dropdown');
+const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+
+dropdown.addEventListener('click', function() {
+  dropdown.classList.toggle('open');
+});
+
+</script>
 </html>

@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Poppins:wght@700&display=swap"
         rel="stylesheet" />
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style\style.css" />
     <link rel="stylesheet" href="./style/dashboard.css" />
@@ -37,23 +38,30 @@
                 </div>
                 <nav>
         
-                    <label for="nav-toggle" class="nav-toggle-label">&#9781;</label>
+                    <!-- <label for="nav-toggle" class="nav-toggle-label">&#9781;</label> -->
+
                     <ul class="menu">
-                        <li><a href="./dashboard.html">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="./dashboard.html">Link Shortner</a></li>
+                        <li><a href="./generateQR.html">Link To QR</a></li>
+                        <li><a href="./QRify-main/qrcode.html">UPI To QR</a></li>
                         <li>
-                            <a href="userAccount.html" class="button signup1">👤Welcome, <span
-                                    id="username"></span></a>
-                                    <a id="logOutBtn" href="login.html"><span class="button signup1" class="material-symbols-outlined">logout</span></a>
                         </li>
                     </ul>
+                    <div class="usernamelogout">
+                        <a href="" class="button signup1">👤Welcome, <span
+                            id="username"></span></a>
+                            <a id="logOutBtn" href="login.html"><span class="button signup1" class="material-symbols-outlined">logout</span></a>
+                    </div>
                 </nav>
             </div>
         </div>
     </header>
     <main>
+        <!-- <div class="qrcodegenerate">
+            <a href="generateQR.html">
+                <button>Want to Generate QR codes?</button>
+            </a>
+        </div> -->
         <div class="main-overview" id="main-overview">
             <div class="overview-card" id="overview-card1">
                 <p>All Urls</p>

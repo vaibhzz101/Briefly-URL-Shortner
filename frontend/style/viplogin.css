@@ -9,9 +9,7 @@
     /* height: 400px; */
 }
 .loginWrapper{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    /* margin-top: 350px; */
+    padding: 15px;
     width: 100%
 }
 .createAccount{

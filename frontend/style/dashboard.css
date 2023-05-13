@@ -225,7 +225,8 @@ main {
 .shortUrl-box>:nth-child(2) p {
     color: #ffffff;
     border-radius: 8px;
-
+    border: 1px solid #ffffff;
+    background-color: #00AEF0;
     padding: 10px;
 }
 
@@ -278,9 +279,45 @@ main {
     .main-graph-chart>div {
         flex-direction: column;
     }
-
+    
     .main-graph-chart>div>div {
         /* border: 1px solid black; */
         width: 90%;
     }
+}
+
+@media (max-width: 790px){
+    .signup1{
+        display: inline;
+    }
+}
+@media (max-width: 580px){
+    .signup1{
+        width: 30%;
+    }
+    button{
+        width: 30% ;
+    }
+    .usernamelogout{
+        font-size: x-small;
+    }
+}
+@media (max-width: 450px){
+    .signup1{
+        width: 30%;
+    }
+    button{
+        width: 30% ;
+    }
+    nav{
+        font-size: xx-small;
+    }
+    .logo img{
+        width: 80%;
+    }
+}
+.qrcodegenerate{
+    text-align: center;
+    color: lightblue;
+    font-size: larger;
 }
