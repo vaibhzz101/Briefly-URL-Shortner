@@ -1,12 +1,12 @@
 # Briefly 
 ## URL Shortner with an analysis 
 
-#### A URL shortener is a tool that can be used to shorten long, complex URLs into shorter, more manageable links. This project is a simple URL shortener service, where users can input a long URL and get a shorter one in return..
+#### A URL shortener is a tool that can be used to shorten long, complex URLs into shorter, more manageable links. This project is a simple URL shortener service, where users can input a long URL and get a shorter one in return and will also QR code for link and UPI.
 ## Tech Stacks Used:
 - ### Frontend: 
   `HTML` `CSS` `JavaScript` `tailwind`
 - ### Backend: 
-  `Node.js` `Express.js` `MongoDB` `Redis` `google-auth`
+  `Node.js` `Express.js` `MongoDB` `Redis` `google-oAuth` `github-oAuth`
 
 ## Tools Used:
  - ### IDE:
@@ -14,7 +14,7 @@
  - ### External Package Manager: 
     `NPM` 
  - ### Deployment tools:
-    `Netlify` `Cyclic`
+    `Netlify` `Cyclic` `Render`
 
 ## Frontend Deployed link:
 - Client Side: [https://lacking-berry-1088.netlify.app/](https://lacking-berry-1088.netlify.app/)
