@@ -1,7 +1,7 @@
 # Briefly 
 ## URL Shortner with an analysis 
 
-#### A URL shortener is a tool that can be used to shorten long, complex URLs into shorter, more manageable links. This project is a simple URL shortener service, where users can input a long URL and get a shorter one in return and will also QR code for link and UPI.
+#### A URL shortener is a tool that can be used to shorten long, complex URLs into shorter, more manageable links. This project is a simple URL shortener service, where users can input a long URL and get a shorter one in return and will also generate QR code for link and UPI.
 ## Tech Stacks Used:
 - ### Frontend: 
   `HTML` `CSS` `JavaScript` `tailwind`
